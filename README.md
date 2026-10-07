@@ -59,9 +59,11 @@ Progress is stored under `gstguru-pro-progress-v1`, separately from TaxGuru Pro.
 
 ## Deploy to Vercel or another static host
 
-The application uses Next.js static export with trailing slashes. Vercel can build this repository using `npm run build` and publish `out/`. On a generic static host, upload the contents of `out/`, enable directory index files and use `404.html` for missing routes. There is no server runtime or environment-variable requirement.
+The application uses Next.js static export with trailing slashes. The supplied `vercel.json` selects the Other framework preset, runs `npm run verify && npm run build`, and publishes `out/`. On a generic static host, upload the contents of `out/`, enable directory index files and use `404.html` for missing routes. There is no server runtime or environment-variable requirement.
 
-The supplied project is local source and a verified static export. No GitHub repository or external deployment is created by this deliverable.
+- Production: [gstguru-pro.vercel.app](https://gstguru-pro.vercel.app/)
+- Source: [swarnendu-revops/gstguru-pro](https://github.com/swarnendu-revops/gstguru-pro)
+- Vercel project: `gstguru-pro` under `swarnendu-revops-projects`, connected to the repository's `main` branch. Pushing to `main` triggers a production deployment; other branches receive previews.
 
 ## Content scope
 
