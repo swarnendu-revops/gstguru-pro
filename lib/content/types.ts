@@ -26,6 +26,9 @@ export type Chapter = {
   id: string; // e.g. "1.1"
   title: string;
   roadmap: string;
+  learningGoal: string;
+  story: string;
+  selfCheck: { question: string; answer: string };
   keyTerms: KeyTerm[];
   explanation: string; // markdown
   legalBasis: string; // markdown

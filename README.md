@@ -1,11 +1,11 @@
 # GSTGuru Pro
 
-A static Indian GST practitioner learning course adapted from [TaxGuru Pro](https://github.com/swarnendu-revops/taxguru), preserving its module/chapter/quiz learning flow while replacing the income-tax content with GST material.
+A beginner-friendly Indian GST learning course adapted from [TaxGuru Pro](https://github.com/swarnendu-revops/taxguru), preserving its module/chapter/quiz learning flow while replacing the income-tax content with GST material.
 
-- **10 modules, 40 chapters**, each with definitions, explanation, legal references, two worked examples, practitioner traps and recap.
+- **10 modules, 40 chapters**, each with a familiar situation, plain-English definitions, four teaching steps, two worked examples, common mistakes, recap and an explain-back check. Official law references are available as optional deeper reading.
 - **160 chapter questions + 80 module questions**: MCQ, true/false and numeric exercises.
 - **60-question final assessment**: six questions per module, answers hidden until completion, a 70% benchmark and module-wise results. It reuses selected authored questions; it is not a separate 60-question bank or statutory qualification.
-- Searchable curriculum, resume link, explicit chapter completion, responsive layout and GST-specific browser progress.
+- Plain-language practice prompts, contextual word help in practice quizzes, searchable curriculum, resume link, explicit chapter completion, responsive layout and GST-specific browser progress.
 - Official-source page and amendment checkpoints. No login, backend, API key or live AI service.
 
 ## Curriculum

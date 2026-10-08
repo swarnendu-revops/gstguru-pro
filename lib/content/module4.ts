@@ -4,56 +4,56 @@ export const module4: Module = {
   "id": "module-4",
   "number": 4,
   "title": "Place & Time of Supply",
-  "summary": "Choose the correct tax head and reporting period for domestic, cross-border and rate-change transactions.",
+  "summary": "Use practical location and date examples to choose the tax type and reporting period.",
   "chapters": [
     {
       "id": "4.1",
       "title": "Place of Supply: Goods",
-      "roadmap": "Follow movement, delivery instructions and installation facts rather than invoice addresses alone.",
+      "roadmap": "Find where a goods supply is treated as happening, then choose the tax type.",
       "keyTerms": [
         {
           "term": "Place of supply",
-          "def": "The legally assigned location of the supply."
+          "def": "The location the law assigns to a particular supply. Comparing it with the supplier’s location helps choose IGST or CGST plus SGST."
         },
         {
           "term": "Bill-to/ship-to",
-          "def": "One person instructs delivery to another, triggering a statutory deeming rule."
+          "def": "An arrangement where one person buys the goods and instructs delivery to someone else."
         },
         {
           "term": "Installation supply",
-          "def": "Goods assembled or installed at a site, with a specific place-of-supply rule."
+          "def": "Goods supplied for assembly or installation at a site; that site generally matters for the location rule."
         }
       ],
-      "explanation": "For goods involving movement, the ordinary rule takes the place where movement terminates for delivery to the recipient. A different rule applies when a third person directs delivery to someone else: section 10(1)(b) can deem the third person's principal place of business to be the place of supply for that leg.\n\nWhen goods do not move, use their location at delivery. Assembly or installation supplies generally follow the installation site. Imports and exports use section 11. Supplies to unregistered persons also have the specific section 10(1)(ca) rule; do not assume the B2B rule always applies to a consumer transaction.\n\nMap each contractual supply separately in a chain. The physical destination can differ from the deemed place of supply on an invoice. Retain purchase orders, recipient instructions, delivery evidence and address particulars to support the tax head.",
-      "legalBasis": "IGST Act sections 10 and 11; section 10(1)(ca) for specified unregistered-person supplies.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Start with ordinary goods delivery\nWhen goods move for delivery to the recipient, the usual place of supply is where that movement ends. Compare that place with the supplier’s location. Different States ordinarily mean IGST; the same State ordinarily means CGST plus SGST, subject to exceptions.\n\n### 2. Separate the buyer from the delivery address\nIf a third person orders goods and directs delivery elsewhere, the special bill-to/ship-to rule can assign the buyer’s main business location to that supply. Then examine the buyer’s own onward supply separately.\n\n### 3. Check other goods situations\nIf goods do not move, their location when delivered matters. Installation usually follows the installation site. Imports and exports have special rules. Consumer purchases from unregistered recipients also have a specific address rule, so do not copy a registered-business rule into every retail case.\n\n### 4. Draw each sale as its own arrow\nWrite seller → buyer for each contract, alongside the physical movement. Keep the purchase order and delivery instruction. This prevents mixing two sales into one location decision.",
+      "legalBasis": "IGST Act sections 10 and 11; section 10(1)(ca) for specified unregistered-person supplies.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Ordinary movement",
-          "body": "A Karnataka supplier sells to a Maharashtra registered buyer and movement ends there. Place of supply is Maharashtra; assuming no exception, ₹1,00,000 at assumed 18% gives **₹18,000 IGST**."
+          "title": "Karnataka seller, Maharashtra delivery",
+          "body": "Assume an ordinary sale to a registered Maharashtra buyer, ending delivery there, worth ₹1,00,000 at 18%.\n\n1. Place of supply: Maharashtra.\n2. Supplier location: Karnataka.\n3. Different States: **₹18,000 IGST** on these facts."
         },
         {
-          "title": "Third-person instruction",
-          "body": "A Delhi business buys from a Maharashtra supplier and instructs shipment to Gujarat. For the supplier-to-Delhi-buyer leg, section 10(1)(b) can deem Delhi the place of supply. Analyse the Delhi business onward leg separately."
+          "title": "A Delhi buyer directs a Gujarat delivery",
+          "body": "A Maharashtra supplier sells to a Delhi business, which instructs delivery to Gujarat.\n\n1. Identify the supplier-to-Delhi-buyer contract.\n2. The special rule can assign Delhi as the place of supply for that leg.\n3. Analyse the Delhi business’s onward sale separately.\n\nThe truck’s destination is not the answer for both contracts."
         }
       ],
       "nuances": [
-        "Different legs may have different places of supply.",
-        "Unregistered-recipient goods rules require address review.",
-        "Installation location can override an ordinary movement analysis."
+        "Place of supply is a legal location, not always the delivery address.",
+        "Bill-to/ship-to arrangements can contain separate supplies.",
+        "Registered-business and consumer rules can differ."
       ],
       "recap": [
-        "Identify the supply leg.",
-        "Select the specific goods rule.",
-        "Preserve movement and instruction evidence."
+        "Find the applicable goods-location rule.",
+        "Compare place of supply with supplier location.",
+        "Keep each contractual sale separate."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "For ordinary goods movement, place of supply is where:",
+          "question": "For an ordinary goods sale involving movement, the usual place of supply is where what happens?",
           "options": [
             "The website is hosted",
             "Payment occurs",
-            "Movement ends for delivery",
+            "The goods finish their movement for delivery",
             "The bank is located"
           ],
           "correctIndex": 2,
@@ -63,7 +63,7 @@ export const module4: Module = {
         },
         {
           "type": "tf",
-          "question": "In bill-to/ship-to cases the ship-to State always governs every invoice.",
+          "question": "When a buyer directs delivery to someone else, the shipping State always determines the place of supply for every contract in the chain.",
           "correctBool": false,
           "explanation": "The third-person deeming rule can change the place on one leg.",
           "id": "4.1-q2",
@@ -71,7 +71,7 @@ export const module4: Module = {
         },
         {
           "type": "numeric",
-          "question": "Assumed inter-State value ₹1,00,000 at 18%. IGST in ₹?",
+          "question": "Assume an ordinary inter-State goods supply is ₹1,00,000 before GST at 18%. What is the IGST, in rupees?",
           "correctNumber": 18000,
           "tolerance": 0.01,
           "explanation": "₹1,00,000 × 18% = ₹18,000.",
@@ -80,78 +80,84 @@ export const module4: Module = {
         },
         {
           "type": "mcq",
-          "question": "Goods installed at a site ordinarily follow:",
+          "question": "For goods supplied for installation at a site, which location rule ordinarily matters?",
           "options": [
             "The lowest State rate",
             "The directors residence",
             "The bank address",
-            "Installation-site rule"
+            "The rule using the installation site"
           ],
           "correctIndex": 3,
           "explanation": "A specific installation rule applies.",
           "id": "4.1-q4",
           "sectionRef": "IGST Act sections 10 and 11; section 10(1)(ca) for specified unregistered-person supplies."
         }
-      ]
+      ],
+      "learningGoal": "Find where a goods supply is treated as happening, then choose the tax type.",
+      "story": "Asha in Karnataka sells goods delivered to Maharashtra. On another order, a Delhi buyer asks a Maharashtra seller to send goods directly to Gujarat. The shipping address alone does not answer every GST location question.",
+      "selfCheck": {
+        "question": "Why can goods delivered to Gujarat have Delhi as the place of supply on one leg?",
+        "answer": "A Delhi buyer may direct that delivery, triggering the special bill-to/ship-to rule for the seller’s supply to that buyer."
+      }
     },
     {
       "id": "4.2",
       "title": "Place of Supply: Domestic Services",
-      "roadmap": "Start with the domestic default and then test the service-specific rules.",
+      "roadmap": "Use the right location rule for an Indian service, including exceptions such as hotel stays.",
       "keyTerms": [
         {
           "term": "Registered recipient",
-          "def": "A person registered under GST, affecting the default place rule."
-        },
-        {
-          "term": "Immovable-property service",
-          "def": "A service with a specific property-location rule where applicable."
+          "def": "The customer receiving the service who has a GST registration."
         },
         {
           "term": "Recipient location",
-          "def": "The statutorily determined location, not always the payment address."
-        }
-      ],
-      "explanation": "Section 12 applies where supplier and recipient are in India. For services without a specific rule, the place is ordinarily the registered recipient's location. For an unregistered recipient, the address-on-record rule applies, otherwise the supplier's location.\n\nSpecific categories can override the default: immovable-property services, restaurant services, performance-based services, event admission/organisation, transport, telecommunications and others. Read the category, recipient status and exceptions carefully. A company cannot automatically claim an inter-State service just because its head-office GSTIN is in another State.\n\nFor hotel accommodation, property location is significant. For event services, admission and organisation can have different rules. Identify what the contract actually supplies before selecting a section. Once place is established, compare it with supplier location under the inter-/intra-State provisions.",
-      "legalBasis": "IGST Act section 12, especially sections 12(2), 12(3), 12(6) and 12(7); sections 7 and 8.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
-      "examples": [
-        {
-          "title": "Default B2B service",
-          "body": "A Karnataka consultant supplies an ordinary consultancy to a Maharashtra registered business, without a specific override. Place of supply is Maharashtra. At assumed 18% on ₹50,000, IGST is **₹9,000**."
+          "def": "The customer’s location determined under the legal rules; it is not automatically the address of any office you choose."
         },
         {
-          "title": "Hotel booking",
-          "body": "A Maharashtra employee stays at a Karnataka hotel. The accommodation place of supply ordinarily follows the Karnataka property. A Maharashtra GSTIN on the bill does not alone make the hotel charge IGST."
+          "term": "Immovable-property service",
+          "def": "A service connected with fixed property, such as accommodation in a hotel or work on a building."
+        }
+      ],
+      "explanation": "### 1. Check that this is a domestic-service case\nHere the supplier and recipient are in India. For an ordinary service without a special rule, the registered customer’s location is usually the place of supply.\n\n### 2. Check an unregistered customer’s address\nUnder the default rule, use the unregistered customer’s address on record where available; otherwise the supplier’s location. Keep the supporting customer information.\n\n### 3. Ask whether a special category overrides the default\nProperty, restaurants, events, transport and other specified services have special rules. A hotel stay usually follows the property location. Event admission and organising an event can have different rules, even though both involve the same event.\n\n### 4. Choose the tax after choosing the location\nCompare the legally determined place of supply with supplier location. A company giving its head-office GSTIN does not automatically convert every service it buys elsewhere into an inter-State service.",
+      "legalBasis": "IGST Act section 12, especially sections 12(2), 12(3), 12(6) and 12(7); sections 7 and 8.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "examples": [
+        {
+          "title": "An ordinary design or consultancy service",
+          "body": "Assume a Karnataka consultant serves a registered Maharashtra business, no special rule applies, and the fee is ₹50,000 at 18%.\n\n1. Default place of supply: Maharashtra.\n2. Compare with Karnataka supplier location.\n3. GST = **₹9,000 IGST**."
+        },
+        {
+          "title": "A hotel stay in Karnataka",
+          "body": "A Maharashtra employee stays at a Karnataka hotel.\n\n1. Identify the service as accommodation connected with property.\n2. The place of supply ordinarily follows the Karnataka hotel.\n3. A Maharashtra GSTIN on the bill does not, by itself, require IGST."
         }
       ],
       "nuances": [
-        "Admission is not the same as event organisation.",
-        "A foreign property can trigger a special domestic-rule proviso.",
-        "Incorrect place of supply can also affect recipient credit."
+        "Find the service category before choosing the default rule.",
+        "A head-office GSTIN does not override a special place-of-supply rule.",
+        "Different services associated with one event can have different treatment."
       ],
       "recap": [
-        "Establish whether section 12 applies.",
-        "Check specific rules before the default.",
-        "Compare supplier location with the legal place."
+        "Default business-service rules use customer location.",
+        "Special services may use property or performance location.",
+        "Choose the tax type after checking the rule."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "For ordinary domestic B2B consultancy without an override, the default place is:",
+          "question": "For ordinary consulting between Indian businesses, with a registered customer and no special rule, which location is normally used?",
           "options": [
-            "Registered recipient location",
+            "The registered customer’s legally determined location",
             "Bank branch",
             "Contract signature place",
             "Supplier location"
           ],
           "correctIndex": 0,
-          "explanation": "Section 12(2) uses the registered recipient location.",
+          "explanation": "Section 12(2) uses the registered customer/receiving business location.",
           "id": "4.2-q1",
           "sectionRef": "IGST Act section 12, especially sections 12(2), 12(3), 12(6) and 12(7); sections 7 and 8."
         },
         {
           "type": "tf",
-          "question": "The recipient GSTIN State always overrides the hotel property location.",
+          "question": "A hotel customer's GSTIN State always overrides the location of the hotel property.",
           "correctBool": false,
           "explanation": "Accommodation requires the specific immovable-property rule.",
           "id": "4.2-q2",
@@ -159,7 +165,7 @@ export const module4: Module = {
         },
         {
           "type": "numeric",
-          "question": "Assumed inter-State service value ₹50,000 at 18%. Tax in ₹?",
+          "question": "Assume a taxable inter-State service is ₹50,000 before GST at 18%. What is the GST, in rupees?",
           "correctNumber": 9000,
           "tolerance": 0.01,
           "explanation": "₹50,000 × 18% = ₹9,000.",
@@ -168,10 +174,10 @@ export const module4: Module = {
         },
         {
           "type": "mcq",
-          "question": "Before applying the service default, check:",
+          "question": "Before using the default service-location rule, what should you check?",
           "options": [
             "Only tax payment",
-            "A specific place-of-supply rule",
+            "Whether this service has a special location rule",
             "Only the invoice total",
             "Only profit margin"
           ],
@@ -180,52 +186,58 @@ export const module4: Module = {
           "id": "4.2-q4",
           "sectionRef": "IGST Act section 12, especially sections 12(2), 12(3), 12(6) and 12(7); sections 7 and 8."
         }
-      ]
+      ],
+      "learningGoal": "Use the right location rule for an Indian service, including exceptions such as hotel stays.",
+      "story": "Dev in Karnataka designs a logo for a registered Maharashtra customer. Later that customer books a Karnataka hotel. Both are services, but the hotel follows a property-based rule rather than the ordinary business-service rule.",
+      "selfCheck": {
+        "question": "Why is a Maharashtra company’s Karnataka hotel bill not automatically inter-State?",
+        "answer": "Hotel accommodation generally follows the property location, rather than simply the customer’s head-office registration."
+      }
     },
     {
       "id": "4.3",
       "title": "Cross-border Services & the Tax Head",
-      "roadmap": "Apply section 13 and determine why a foreign customer does not automatically create an export.",
+      "roadmap": "Understand why a foreign customer or foreign payment does not automatically make a service an export.",
       "keyTerms": [
         {
           "term": "Section 13",
-          "def": "The place-of-supply framework where supplier or recipient is outside India."
+          "def": "The numbered part of the IGST Act dealing with service location where the supplier or recipient is outside India."
         },
         {
           "term": "Intermediary",
-          "def": "A person arranging or facilitating a supply between others, with a statutory own-account exclusion."
+          "def": "Someone arranging or helping a supply between other parties, rather than supplying that underlying service on their own account."
         },
         {
           "term": "Export of services",
-          "def": "A supply meeting all conditions in IGST Act section 2(6)."
+          "def": "A service meeting all the legal export conditions, including location, payment and establishment tests."
         }
       ],
-      "explanation": "For cross-border services, section 13 ordinarily starts with recipient location, subject to specific rules and address availability. Performance-linked services, immovable property, events, intermediary services and certain other categories require separate treatment.\n\nAn intermediary arranges or facilitates another supply; a provider supplying the service on its own account is excluded from that definition. Read the contract and responsibility for the deliverable instead of classifying every overseas commission or outsourced service identically.\n\nExport status requires more than a foreign invoice: supplier in India, recipient outside India, place outside India, receipt in convertible foreign exchange or permitted Indian rupees, and satisfaction of the distinct-establishment condition. The Finance Act 2026 includes a change concerning section 13(8)(b); verify its notified commencement before relying on either version for a particular period. Do not assume an enacted amendment has already commenced.",
-      "legalBasis": "IGST Act sections 2(6), 2(13), 7, 8 and 13; check commencement of the Finance Act 2026 section 13 amendment.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Find what you actually promised to do\nDelivering your own software service differs from arranging a sale between two other businesses. Read who is responsible for the deliverable. A commission label or outsourcing arrangement does not alone settle the classification.\n\n### 2. Apply the cross-border location rule\nThe default generally starts with customer location, but specified services have special rules. Work tied to property, events or performance needs its own check. Intermediary treatment also needs the version of the rule for the relevant period.\n\n### 3. Test every export condition\nFor a service export, establish an Indian supplier, an overseas recipient, a place of supply outside India, qualifying foreign-currency or RBI-permitted rupee payment, and the required establishment distinction. The RBI is India’s central bank. Supplying your own overseas branch can fail that last condition.\n\n### 4. Check amendment timing\nThe Finance Act 2026 includes an intermediary-rule change. Check when the relevant provision starts before applying it. A passed amendment and an effective amendment are not always the same.",
+      "legalBasis": "IGST Act sections 2(6), 2(13), 7, 8 and 13; check commencement of the Finance Act 2026 section 13 amendment.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Own-account service",
-          "body": "Assume an Indian software supplier delivers its own service to a US recipient, the default place is abroad, payment conditions are satisfied and establishments are not disqualifying distinct establishments. A ₹2,00,000 invoice can qualify as zero-rated."
+          "title": "Delivering your own software service",
+          "body": "Assume Dev’s ₹2,00,000 service meets every export condition.\n\n1. He supplies the software service on his own account.\n2. The applicable place of supply is outside India.\n3. Payment and establishment conditions are satisfied.\n4. The service can qualify for zero-rated treatment; choose the permitted export route separately."
         },
         {
-          "title": "Classification boundary",
-          "body": "An Indian business merely arranges a supply between two others for ₹25,000 commission. First resolve the intermediary definition and the period-applicable section 13 rule; do not mark the receipt as an export solely because the payer is abroad."
+          "title": "Only arranging someone else’s supply",
+          "body": "A business receives ₹25,000 commission for arranging a supply between two other parties.\n\n1. Check whether it is an intermediary.\n2. Find the location rule effective for the transaction period.\n3. Test the export conditions using that result.\n\nAn overseas payer does not skip these steps."
         }
       ],
       "nuances": [
-        "Foreign currency receipt alone does not establish export.",
-        "Intermediary status needs contract-level facts.",
-        "Track the 2026 amendment and its commencement explicitly."
+        "Foreign currency alone does not prove an export.",
+        "Own-account service and arranging another party’s supply are different.",
+        "Check the start date of the 2026 intermediary amendment."
       ],
       "recap": [
-        "Use the cross-border service framework.",
-        "Test all export conditions.",
-        "Verify the applicable version of special rules."
+        "Read the contract and deliverable.",
+        "Establish the legally assigned service location.",
+        "Test all export conditions together."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Which fact alone establishes export of services?",
+          "question": "Which fact, by itself, proves that a service is an export?",
           "options": [
             "A foreign client",
             "A foreign-currency receipt",
@@ -233,13 +245,13 @@ export const module4: Module = {
             "An English invoice"
           ],
           "correctIndex": 2,
-          "explanation": "Every statutory export condition must be satisfied.",
+          "explanation": "Every legal export condition must be satisfied.",
           "id": "4.3-q1",
           "sectionRef": "IGST Act sections 2(6), 2(13), 7, 8 and 13; check commencement of the Finance Act 2026 section 13 amendment."
         },
         {
           "type": "tf",
-          "question": "A provider supplying its own service necessarily becomes an intermediary.",
+          "question": "Someone delivering their own service is automatically an intermediary arranging another person's supply.",
           "correctBool": false,
           "explanation": "The definition has an own-account exclusion.",
           "id": "4.3-q2",
@@ -247,7 +259,7 @@ export const module4: Module = {
         },
         {
           "type": "mcq",
-          "question": "Section 13 generally concerns:",
+          "question": "Section 13 provides service-location rules for which broad situation?",
           "options": [
             "Only goods",
             "Only composition",
@@ -261,64 +273,70 @@ export const module4: Module = {
         },
         {
           "type": "mcq",
-          "question": "An enacted 2026 change with uncertain commencement should be:",
+          "question": "A 2026 amendment has been passed but its start date is uncertain. What should you do?",
           "options": [
-            "Checked against its commencement notification",
+            "Checked against the official start-date document",
             "Ignored forever",
             "Replaced by a blog",
             "Applied automatically"
           ],
           "correctIndex": 0,
-          "explanation": "The applicable legal version depends on commencement.",
+          "explanation": "The applicable legal version depends on start date.",
           "id": "4.3-q4",
           "sectionRef": "IGST Act sections 2(6), 2(13), 7, 8 and 13; check commencement of the Finance Act 2026 section 13 amendment."
         }
-      ]
+      ],
+      "learningGoal": "Understand why a foreign customer or foreign payment does not automatically make a service an export.",
+      "story": "Dev creates software for a US customer. His friend only introduces an overseas buyer to another seller and earns commission. They both receive overseas money, but their contracts may fall under different GST location rules.",
+      "selfCheck": {
+        "question": "Is an overseas commission payment automatically a service export?",
+        "answer": "No. First classify the work and apply the period’s place-of-supply rule, then check all export conditions."
+      }
     },
     {
       "id": "4.4",
       "title": "Time of Supply & Rate Changes",
-      "roadmap": "Determine the tax period before applying a rate or filing a return.",
+      "roadmap": "Build a date timeline to find when GST is due and handle a rate change.",
       "keyTerms": [
         {
           "term": "Time of supply",
-          "def": "The statutory point when tax liability arises."
+          "def": "The date GST rules use to decide when tax becomes due for a supply."
         },
         {
           "term": "Advance",
-          "def": "Payment before supply, with treatment differing by supply and notification."
+          "def": "Payment received before the goods or service are fully supplied."
         },
         {
           "term": "Rate-change rule",
-          "def": "Section 14 coordinates supply, invoice and payment around a rate change."
+          "def": "Special timing rules for transactions crossing a GST rate-change date."
         }
       ],
-      "explanation": "Goods and services have different time rules under sections 12 and 13. Invoice timing, payment and the actual supply can matter differently. Relief from tax on advances for qualifying goods supplies is notification-based; do not transfer it automatically to service advances.\n\nRCM has separate time rules involving receipt/payment and statutory invoice-based fallback periods. Associated-enterprise cross-border services have an additional book-entry/payment rule. Build the chronology before choosing the relevant tax month.\n\nFor a rate change, section 14 specifically overrides ordinary time rules and tests whether supply occurred before or after the change, together with invoice and payment dates. For illustration, where supply occurs before a rate change and both invoice and payment occur afterward, the earlier post-change invoice/payment date is used. Avoid deciding only from the delivery date. Keep a dated rate-transition worksheet.",
-      "legalBasis": "CGST Act sections 12, 13 and 14; relevant advance-relief notification. [Official rate-change FAQ](https://gstcouncil.gov.in/sites/default/files/2025-09/faq.pdf).\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Write down three dates\nRecord the supply date, invoice date and payment date. Goods and services have different timing rules. Some continuing arrangements need additional checks. An invoice is the formal sales bill.\n\n### 2. Check advances separately\nQualifying goods supplies can have notification-based relief for advances. Do not automatically apply that relief to service advances. A taxable service advance can bring tax forward before work is finished.\n\n### 3. Check reverse-charge timing separately\nWhen the buyer pays GST under reverse charge, payment, receipt and statutory invoice-based fallback dates can matter differently. Certain services involving connected overseas businesses also have a special book-entry/payment rule. Build the facts before choosing the month.\n\n### 4. Use the special rule for a rate transition\nSection 14 compares supply, invoice and payment dates around a rate change. It can override ordinary timing. Do not choose the rate using delivery date alone; find the rule for that particular date pattern.",
+      "legalBasis": "CGST Act sections 12, 13 and 14; relevant advance-relief notification. [Official rate-change FAQ](https://gstcouncil.gov.in/sites/default/files/2025-09/faq.pdf).\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Service advance",
-          "body": "Assume a taxable service advance of ₹50,000 exclusive of GST and a period-applicable rate of 18%, with no special exception. Tax on the advance is **₹9,000** under the applicable service time rule."
+          "title": "Advance for a taxable service",
+          "body": "Assume Dev receives ₹50,000 before tax for a taxable service at 18%, and the applicable timing rule taxes this advance.\n\n1. Advance value: ₹50,000.\n2. GST = ₹50,000 × 18% = **₹9,000**.\n3. Report it in the period required by that rule, not automatically when work finishes."
         },
         {
-          "title": "Transition chronology",
-          "body": "Supply is on 20 September; rate changes on 22 September; invoice is 24 September and payment is 26 September. Under the stated section 14(a)(i) pattern, time of supply is **24 September**. Establish the rate notified for that date."
+          "title": "A sale crossing a rate-change date",
+          "body": "Supply: 20 September. Rate change: 22 September. Invoice: 24 September. Payment: 26 September.\n\n1. Supply is before the change; both invoice and payment are after it.\n2. Under the stated special rule, choose the earlier invoice/payment date: **24 September**.\n3. Check the rate effective for that date and the conditions.\n\nOther date patterns can have different results."
         }
       ],
       "nuances": [
-        "Goods advance relief is not general relief for services.",
-        "RCM fallback clocks differ for goods and services.",
-        "Section 14 needs three dates, not one."
+        "Service advances and goods advances can differ.",
+        "Reverse-charge timing is a separate check.",
+        "Do not decide a rate-transition case from delivery alone."
       ],
       "recap": [
-        "Write the chronology.",
-        "Choose the appropriate time rule.",
-        "Apply the period-valid notification."
+        "Record supply, bill and payment dates.",
+        "Choose the goods/service/reverse-charge timing rule.",
+        "Use the special transition rule when rates change."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "A rate-change analysis generally requires:",
+          "question": "Which dates do you generally need to check a transaction crossing a GST rate change?",
           "options": [
             "Only supply date",
             "Supply, invoice and payment dates",
@@ -332,7 +350,7 @@ export const module4: Module = {
         },
         {
           "type": "tf",
-          "question": "Advance relief for qualifying goods automatically exempts service advances.",
+          "question": "Relief for advances on qualifying goods automatically removes GST on every service advance too.",
           "correctBool": false,
           "explanation": "Goods notification relief cannot be assumed for services.",
           "id": "4.4-q2",
@@ -340,7 +358,7 @@ export const module4: Module = {
         },
         {
           "type": "numeric",
-          "question": "Service advance ₹50,000 exclusive of GST at assumed 18%, no exception. GST in ₹?",
+          "question": "Assume a taxable service advance is ₹50,000 before GST, taxable now at 18%, with no exception. What is GST on the advance, in rupees?",
           "correctNumber": 9000,
           "tolerance": 0.01,
           "explanation": "₹50,000 × 18% = ₹9,000.",
@@ -349,7 +367,7 @@ export const module4: Module = {
         },
         {
           "type": "mcq",
-          "question": "Supply before change; invoice and payment after change. Under the stated pattern, use:",
+          "question": "Supply occurs before a rate change; invoice and payment are both afterward. Under the stated special timing pattern, which date is used?",
           "options": [
             "Always annual return date",
             "Always later payment",
@@ -361,18 +379,24 @@ export const module4: Module = {
           "id": "4.4-q4",
           "sectionRef": "CGST Act sections 12, 13 and 14; relevant advance-relief notification. [Official rate-change FAQ](https://gstcouncil.gov.in/sites/default/files/2025-09/faq.pdf)."
         }
-      ]
+      ],
+      "learningGoal": "Build a date timeline to find when GST is due and handle a rate change.",
+      "story": "Dev receives an advance before completing a service. Another customer receives goods before a rate change but is billed afterward. GST needs a timeline, not just a guess based on delivery day.",
+      "selfCheck": {
+        "question": "Why is a timeline useful before calculating GST?",
+        "answer": "The relevant date decides the reporting period and can also affect which rate applies during a rate change."
+      }
     }
   ],
   "moduleQuiz": [
     {
       "type": "mcq",
-      "question": "A buyer directs a supplier to deliver goods to a third party. What should be analysed?",
+      "question": "A buyer instructs a supplier to deliver goods to someone else. What should you analyse?",
       "options": [
         "Only the payment date",
         "Only ITC balance",
         "Only the truck destination",
-        "Section 10(1)(b) and each supply leg"
+        "The bill-to/ship-to rule and each separate seller-to-buyer supply"
       ],
       "correctIndex": 3,
       "explanation": "Map deemed place of supply and separate onward supply.",
@@ -381,7 +405,7 @@ export const module4: Module = {
     },
     {
       "type": "tf",
-      "question": "A consumer goods supply may require section 10(1)(ca) analysis.",
+      "question": "A sale of goods to an unregistered consumer can have a specific location rule under section 10(1)(ca).",
       "correctBool": true,
       "explanation": "The unregistered-person rule must be considered where applicable.",
       "id": "m4-q2",
@@ -389,7 +413,7 @@ export const module4: Module = {
     },
     {
       "type": "mcq",
-      "question": "A hotel in Karnataka bills a Maharashtra GSTIN. Which fact primarily guides accommodation place of supply?",
+      "question": "A Karnataka hotel bills a customer with a Maharashtra GSTIN. Which fact primarily determines the accommodation's place of supply?",
       "options": [
         "The hotel property location",
         "The payer bank State",
@@ -403,7 +427,7 @@ export const module4: Module = {
     },
     {
       "type": "tf",
-      "question": "Event admission and event organisation necessarily have identical place rules.",
+      "question": "Entry to an event and organising that event must always use identical service-location rules.",
       "correctBool": false,
       "explanation": "They are addressed separately and can produce different results.",
       "id": "m4-q4",
@@ -411,10 +435,10 @@ export const module4: Module = {
     },
     {
       "type": "mcq",
-      "question": "An Indian consultant receives foreign currency but place of supply is in India under an applicable special rule. Export status?",
+      "question": "An Indian consultant receives foreign currency, but the applicable special rule puts the service's place of supply in India. Does that establish an export?",
       "options": [
         "Automatic export",
-        "Not established; place-outside condition fails",
+        "No; the required place-outside-India condition is not met",
         "Always exempt",
         "Depends only on PAN"
       ],
@@ -425,15 +449,15 @@ export const module4: Module = {
     },
     {
       "type": "tf",
-      "question": "A supplier can verify export treatment without checking payment and establishment conditions.",
+      "question": "You can verify service-export status without checking the payment or establishment conditions.",
       "correctBool": false,
-      "explanation": "Those are statutory export tests.",
+      "explanation": "Those are legal export tests.",
       "id": "m4-q6",
       "sectionRef": "IGST Act sections 2(6), 2(13), 7, 8 and 13; check commencement of the Finance Act 2026 section 13 amendment."
     },
     {
       "type": "mcq",
-      "question": "Supply 20 September, rate change 22nd, invoice 24th, payment 26th. Under section 14(a)(i), time of supply?",
+      "question": "Supply is 20 September, rate changes on the 22nd, invoice is the 24th and payment the 26th. Under the taught supply-before/invoice-and-payment-after pattern, what is the time of supply?",
       "options": [
         "20th",
         "22nd",
@@ -447,9 +471,9 @@ export const module4: Module = {
     },
     {
       "type": "tf",
-      "question": "RCM and forward-charge time-of-supply rules are interchangeable.",
+      "question": "Buyer reverse-charge timing rules and ordinary seller-charge timing rules can always be used interchangeably.",
       "correctBool": false,
-      "explanation": "RCM has its own statutory timing rules.",
+      "explanation": "RCM has its own legal timing rules.",
       "id": "m4-q8",
       "sectionRef": "CGST Act sections 12, 13 and 14; relevant advance-relief notification. [Official rate-change FAQ](https://gstcouncil.gov.in/sites/default/files/2025-09/faq.pdf)."
     }

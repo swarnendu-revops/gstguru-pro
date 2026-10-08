@@ -4,52 +4,56 @@ export const module2: Module = {
   "id": "module-2",
   "number": 2,
   "title": "Supply, Bundles & Reverse Charge",
-  "summary": "Learn the scope of supply, supplies without consideration, composite and mixed supplies, and who pays tax under reverse charge.",
+  "summary": "Understand what counts as a supply, how packages are taxed, and who pays GST.",
   "chapters": [
     {
       "id": "2.1",
       "title": "The Scope of Supply",
-      "roadmap": "Apply the supply test before looking up a rate.",
+      "roadmap": "Decide whether an activity is a GST supply before calculating tax.",
       "keyTerms": [
         {
           "term": "Supply",
-          "def": "The taxable-event framework covering qualifying transactions under section 7."
+          "def": "A transaction GST recognises, usually selling goods or doing work in return for something, connected with business. Special inclusions and exclusions also apply."
         },
         {
           "term": "Schedule I",
-          "def": "Listed activities treated as supply even without consideration."
+          "def": "A list attached to the Act naming certain activities that can count as supplies even without payment."
         },
         {
           "term": "Schedule III",
-          "def": "Listed activities treated as neither supply of goods nor supply of services."
-        }
-      ],
-      "explanation": "Ordinary supply analysis asks whether there is a transaction involving goods or services, consideration, and a business connection. Imports of services for consideration have a separate limb even without a business connection. Certain Schedule I activities count without consideration; Schedule III excludes identified activities.\n\nSchedule II classifies specified activities as goods or services **after** they constitute a supply under section 7. It is not a stand-alone device to tax every transaction listed there. Employee services to the employer in the course of employment fall in Schedule III; a person's separate independent consultancy requires its own analysis.\n\nRead agreements, delivery evidence and the actual conduct. Receiving money is not enough to establish a supply: damages, grants and deposits need a reciprocal-obligation analysis rather than an automatic label. Conversely, no invoice or no cash does not prevent a Schedule I supply.",
-      "legalBasis": "CGST Act section 7 and Schedules I, II and III.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
-      "examples": [
-        {
-          "title": "Employee versus consultant",
-          "body": "An employer pays ₹50,000 salary for employee duties: that employment service falls outside supply. It separately hires an independent consultant for ₹50,000. At an assumed 18% taxable service rate, the consultancy carries **₹9,000** GST subject to the levy and registration facts."
+          "def": "A list attached to the Act naming activities treated as neither a goods supply nor a service supply."
         },
         {
-          "title": "No consideration",
-          "body": "A registered business moves goods to its distinct-person branch in another State without charging a price. Schedule I can treat this as supply; establish valuation and the correct tax head."
+          "term": "Schedule II",
+          "def": "A list used to classify certain supplies as goods or services after they qualify as supplies."
+        }
+      ],
+      "explanation": "### 1. Start with the ordinary sale\nAsk: is someone providing goods or services? Is something given in return? Is it connected with business? These questions are a useful starting point. Imports of services for payment have an additional rule and can count even without a business connection.\n\n### 2. Check the special lists\nSome business transfers count without payment under Schedule I. Some activities are excluded by Schedule III. Employee work for an employer in the course of employment is one exclusion. Separate independent freelance work is a different arrangement.\n\n### 3. Classify only after finding a supply\nSchedule II helps decide whether a qualifying transaction is goods or services. It does not mean that every listed activity is automatically taxable without the first supply test.\n\n### 4. Read the agreement behind the receipt\nA deposit, grant or compensation payment needs its own facts. A payment called “damages” does not automatically mean a taxable fee for agreeing to something. Likewise, having no invoice or no money does not rule out a supply between separately registered branches.",
+      "legalBasis": "CGST Act section 7 and Schedules I, II and III.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "examples": [
+        {
+          "title": "Salary versus separate freelance work",
+          "body": "Dev earns ₹50,000 salary for his employee duties.\n\n1. That employment service falls outside supply.\n2. A different business pays him ₹50,000 for independent consulting work.\n3. If the consulting supply is taxable at an assumed 18% and the applicable registration/charging rules are met, GST is **₹9,000**.\n\nThe work arrangement, not the bank amount, explains the difference."
+        },
+        {
+          "title": "Moving goods between State registrations",
+          "body": "A business sends stock to its separately registered branch in another State and charges no price.\n\n1. Check whether the two registrations are treated as separate persons for GST.\n2. If the Schedule I conditions apply, the transfer can be a supply without payment.\n3. Then work out the value and tax type under the relevant rules.\n\n“No payment” is not the end of the analysis."
         }
       ],
       "nuances": [
-        "Schedule II classifies; first establish supply.",
-        "A penalty receipt is not automatically consideration for tolerating an act.",
-        "A personal import of services for consideration needs separate analysis."
+        "Do not tax every bank receipt automatically.",
+        "Do not assume a transfer is outside GST because no invoice was issued.",
+        "Employee duties and independent consulting are different arrangements."
       ],
       "recap": [
-        "Apply section 7 before rates.",
-        "Read Schedule I and III exceptions.",
-        "Determine the real relationship of the parties."
+        "Test whether there is a supply first.",
+        "Special lists add or exclude particular activities.",
+        "Only then choose classification, value and tax."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Which schedule lists activities treated as neither goods nor services supply?",
+          "question": "Which list attached to the Act contains activities treated as neither goods supplies nor service supplies?",
           "options": [
             "II",
             "III",
@@ -63,7 +67,7 @@ export const module2: Module = {
         },
         {
           "type": "tf",
-          "question": "Schedule II alone makes every listed activity taxable.",
+          "question": "Putting an activity in Schedule II alone makes it taxable, without first checking whether it is a supply.",
           "correctBool": false,
           "explanation": "It classifies an activity that first constitutes supply under section 7.",
           "id": "2.1-q2",
@@ -71,7 +75,7 @@ export const module2: Module = {
         },
         {
           "type": "numeric",
-          "question": "A taxable independent consultancy has ₹50,000 value at assumed 18%. GST in ₹?",
+          "question": "Assume independent consulting work is taxable: ₹50,000 before GST at 18%. What is the GST, in rupees?",
           "correctNumber": 9000,
           "tolerance": 0.01,
           "explanation": "₹50,000 × 18% = ₹9,000.",
@@ -80,11 +84,11 @@ export const module2: Module = {
         },
         {
           "type": "mcq",
-          "question": "Employee services in the course of employment are generally:",
+          "question": "How is employee work for an employer, in the course of employment, generally treated?",
           "options": [
             "A mixed supply",
             "IGST exports",
-            "Schedule III activity",
+            "An activity excluded by Schedule III",
             "Always RCM"
           ],
           "correctIndex": 2,
@@ -92,57 +96,63 @@ export const module2: Module = {
           "id": "2.1-q4",
           "sectionRef": "CGST Act section 7 and Schedules I, II and III."
         }
-      ]
+      ],
+      "learningGoal": "Decide whether an activity is a GST supply before calculating tax.",
+      "story": "Dev receives a salary from his employer, a fee for separate freelance repair work and a refundable deposit. All three bring money into his account. The first GST question is what each payment is actually for.",
+      "selfCheck": {
+        "question": "Why is salary treated differently from a freelance fee?",
+        "answer": "Employee duties for an employer fall within an exclusion. Independent work must be tested separately as a possible business supply."
+      }
     },
     {
       "id": "2.2",
       "title": "Composite & Mixed Supplies",
-      "roadmap": "Identify whether one principal supply controls a bundle or the highest rate applies.",
+      "roadmap": "Recognise a natural package and an artificial bundle, and understand why their GST treatment differs.",
       "keyTerms": [
         {
           "term": "Composite supply",
-          "def": "Naturally bundled supplies made together, with a principal supply."
+          "def": "Things normally supplied together as one natural package, with one main supply. The main supply determines the treatment."
         },
         {
           "term": "Principal supply",
-          "def": "The predominant element of a composite supply."
+          "def": "The main thing the customer is buying in a natural package."
         },
         {
           "term": "Mixed supply",
-          "def": "Individual supplies sold together for a single price without being composite."
+          "def": "Independent items sold together for one price, where the package is not a composite supply. The highest applicable component rate is used."
         }
       ],
-      "explanation": "Look at commercial reality: does a customer ordinarily obtain the elements together, with one element supporting the predominant one? Where supplies are naturally bundled, the principal supply determines treatment under section 8. A seller's statement that a bundle is composite is not conclusive.\n\nA mixed supply requires individual supplies offered together for a **single price**, where the package is not a composite supply. It takes the highest applicable rate among its components. Independently priced items generally require individual classification rather than automatically becoming a mixed supply just because they appear on one invoice.\n\nPackaging and delivery integral to a goods sale can be ancillary to that supply, but an independently contracted transport service may have a different result. Keep the contract, price structure, usual industry practice and customer expectation in the classification memo.",
-      "legalBasis": "CGST Act sections 2(30), 2(74), 2(90) and 8.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Ask why the customer buys the package\nFor a machine that must be safely packed and delivered, those services may support the machine sale. The customer mainly wants the machine. This can be a composite supply if the items are naturally bundled under the facts.\n\n### 2. Find the main supply\nFor a composite supply, treatment follows the principal supply. Do not simply choose the lowest or highest rate. First establish what the main supply is and whether the bundle meets the conditions.\n\n### 3. Look for independent items at one price\nUnrelated items in a single-price gift pack can be a mixed supply. A mixed supply takes the highest applicable rate among its components. A pack is not mixed merely because several items appear on a bill.\n\n### 4. Check how the price is presented\nSeparately sold and separately priced items generally need their own treatment. Keep the order and price breakdown. A seller writing “composite” on the bill does not establish that the items are naturally supplied together.",
+      "legalBasis": "CGST Act sections 2(30), 2(74), 2(90) and 8.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Natural bundle",
-          "body": "Assume a machine sale with mandatory packing and delivery is a composite supply whose principal machine rate is 18%. For a ₹1,00,000 bundle, GST is **₹18,000** under the stated assumptions."
+          "title": "Machine with packing and delivery",
+          "body": "Assume the package meets the composite-supply conditions and the machine’s rate is 18%.\n\n1. Total package price before tax: ₹1,00,000.\n2. The machine is the main supply.\n3. GST = ₹1,00,000 × 18% = **₹18,000**.\n\nThe supporting packing and delivery follow the main supply on these facts."
         },
         {
-          "title": "Gift package",
-          "body": "Assume unrelated items with rates of 5% and 18% are packaged for one ₹2,000 price and the bundle is mixed. The highest 18% rate gives **₹360** GST. If separately sold and priced, analyse each item separately."
+          "title": "One-price gift hamper",
+          "body": "Assume unrelated products with 5% and 18% rates are a mixed supply, sold for ₹2,000 before tax.\n\n1. Find the highest component rate: 18%.\n2. Apply it to the bundle: ₹2,000 × 18% = **₹360**.\n\nIf the items were independently sold and priced, you would analyse each separately."
         }
       ],
       "nuances": [
-        "A single invoice does not prove a mixed supply.",
-        "Natural bundling is a fact test.",
-        "Exercise rates do not identify actual commodity rates."
+        "One invoice does not automatically mean mixed supply.",
+        "A natural bundle needs facts, not just a label.",
+        "A separately contracted transport service can need separate treatment."
       ],
       "recap": [
-        "Composite follows the principal supply.",
-        "Mixed follows the highest rate.",
-        "Examine pricing and commercial facts."
+        "Natural package: find the main supply.",
+        "Mixed single-price package: use the highest applicable component rate.",
+        "Independent prices generally need individual checks."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "A composite supply generally follows:",
+          "question": "A qualifying natural package (composite supply) generally follows the treatment of what?",
           "options": [
             "The purchaser tax slab",
             "No rate",
             "The lowest rate",
-            "The principal supply"
+            "The main supply in the natural package"
           ],
           "correctIndex": 3,
           "explanation": "Section 8 applies the principal-supply treatment.",
@@ -151,7 +161,7 @@ export const module2: Module = {
         },
         {
           "type": "tf",
-          "question": "Every invoice containing several items is a mixed supply.",
+          "question": "Several items on one invoice always make a mixed supply.",
           "correctBool": false,
           "explanation": "The single-price and non-composite requirements must be satisfied.",
           "id": "2.2-q2",
@@ -159,7 +169,7 @@ export const module2: Module = {
         },
         {
           "type": "numeric",
-          "question": "A mixed ₹2,000 bundle has assumed component rates 5% and 18%. Tax in ₹?",
+          "question": "Assume an unrelated single-price package is a mixed supply. Its price is ₹2,000 before tax, with component rates 5% and 18%. What is the GST, in rupees?",
           "correctNumber": 360,
           "tolerance": 0.01,
           "explanation": "₹2,000 × highest rate 18% = ₹360.",
@@ -168,9 +178,9 @@ export const module2: Module = {
         },
         {
           "type": "mcq",
-          "question": "Which fact supports composite supply?",
+          "question": "Which fact supports treating a package as a composite supply?",
           "options": [
-            "Naturally bundled commercial elements",
+            "Items normally supplied together as a natural package",
             "Any common customer",
             "Different States",
             "No invoice"
@@ -180,55 +190,65 @@ export const module2: Module = {
           "id": "2.2-q4",
           "sectionRef": "CGST Act sections 2(30), 2(74), 2(90) and 8."
         }
-      ]
+      ],
+      "learningGoal": "Recognise a natural package and an artificial bundle, and understand why their GST treatment differs.",
+      "story": "Asha sells a machine with necessary packing and delivery. She also sells a gift hamper containing unrelated products for one price. Both are packages, but the tax rule asks whether the items naturally belong together.",
+      "selfCheck": {
+        "question": "Why does the machine package not automatically use the highest rate?",
+        "answer": "Because a qualifying composite supply follows its main supply. The highest-rate rule belongs to mixed supplies."
+      }
     },
     {
       "id": "2.3",
       "title": "Reverse Charge & Section 9(5)",
-      "roadmap": "Separate the recipient-pays mechanism from platform-pays transactions.",
+      "roadmap": "Understand the cases where the buyer or a platform pays GST instead of the seller.",
       "keyTerms": [
         {
-          "term": "Reverse charge (RCM)",
-          "def": "A notified mechanism placing tax liability on the recipient."
+          "term": "Forward charge",
+          "def": "The ordinary arrangement: the seller is responsible for paying the supply’s GST to the government."
         },
         {
-          "term": "Forward charge",
-          "def": "The ordinary mechanism under which the supplier pays tax."
+          "term": "Reverse charge (RCM)",
+          "def": "Reverse Charge Mechanism: for specified cases, the buyer is responsible for the supply’s GST."
+        },
+        {
+          "term": "Cash ledger",
+          "def": "The GST portal account holding money deposited to make tax and other payments."
         },
         {
           "term": "Section 9(5)",
-          "def": "Specified services for which an electronic commerce operator is liable as if the supplier."
+          "def": "A rule making an online platform responsible for GST on specified services, as if it supplied them. It is separate from buyer reverse charge."
         }
       ],
-      "explanation": "Reverse charge is triggered by the statutory provision and the relevant notification, not simply by an unregistered supplier. Section 9(3) covers notified categories; section 9(4) operates for notified classes and categories. Read supplier and recipient qualifications, exceptions and the supply description together.\n\nOnce RCM applies, identify time of supply, issue the prescribed documents where needed, report liability and pay it through the cash ledger. Output tax excludes reverse-charge tax, so ITC cannot discharge that RCM liability. After payment, qualifying credit may be available subject to the credit rules.\n\nSection 9(5) is a separate framework for notified platform services. Do not confuse it with TCS collection by an operator or recipient RCM. Maintain a vendor-category review rather than a blanket policy of taxing all unregistered purchases.",
-      "legalBasis": "CGST Act sections 2(82), 9(3), 9(4), 9(5), 31(3) and 49; corresponding IGST Act section 5.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Check whether this purchase is covered\nReverse charge applies only when the legal provision and notification cover the facts. A notification is an official document identifying the relevant category and conditions. Buying from a seller without GST registration is not, by itself, a universal reverse-charge trigger.\n\n### 2. Pay the reverse-charge tax using money\nCalculate the tax, find the reporting period and prepare any required documents. The reverse-charge amount must be paid through the cash ledger. Purchase-tax credit cannot pay that initial reverse-charge liability.\n\n### 3. Then test purchase-credit eligibility\nAfter the tax is paid, the buyer may be able to claim qualifying credit. That is a second decision, based on business use and all the credit conditions. Payment does not guarantee that the credit is allowed.\n\n### 4. Keep platform rules separate\nFor specified online services, section 9(5) makes the operator responsible. This differs from reverse charge paid by the buyer and from tax a platform collects from seller settlements. Identify the correct mechanism before calculating.",
+      "legalBasis": "CGST Act sections 2(82), 9(3), 9(4), 9(5), 31(3) and 49; corresponding IGST Act section 5.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Cash first",
-          "body": "Assume a notified RCM service costs ₹1,00,000 at 18%. RCM tax is **₹18,000**, payable in cash. If every ITC condition is met, ₹18,000 can subsequently be credited; available ITC cannot replace the initial cash payment."
+          "title": "Pay first, then check credit",
+          "body": "Assume a covered reverse-charge service costs ₹1,00,000 before tax at 18%.\n\n1. Reverse-charge GST = ₹1,00,000 × 18% = **₹18,000**.\n2. Pay ₹18,000 through the cash ledger.\n3. If all credit conditions hold, claim the ₹18,000 as purchase credit through the prescribed process.\n\nExisting credit cannot replace step 2."
         },
         {
-          "title": "Unregistered vendor trap",
-          "body": "A business buys ₹25,000 of ordinary goods from an unregistered local vendor. This fact alone does not establish RCM. Identify a notification covering both the recipient class and the supply."
+          "title": "A seller without registration",
+          "body": "Asha buys ordinary goods worth ₹25,000 from an unregistered local seller.\n\n1. Identify the type of purchase and buyer.\n2. Look for a reverse-charge notification covering both.\n3. If no applicable rule covers the facts, do not create reverse-charge tax merely because the seller is unregistered."
         }
       ],
       "nuances": [
-        "Some service notifications depend on supplier options.",
-        "RCM registration consequences and exemptions need separate checks.",
-        "Section 9(5), RCM and TCS are different mechanisms."
+        "An unregistered seller alone does not prove reverse charge applies.",
+        "Reverse-charge tax needs cash payment even when you have credit available.",
+        "Platform tax responsibility and platform tax collection are different rules."
       ],
       "recap": [
-        "RCM requires an applicable legal trigger.",
-        "Pay RCM tax in cash.",
-        "Credit eligibility is a subsequent test."
+        "Identify who is responsible for the tax.",
+        "Reverse charge needs a specific legal trigger.",
+        "Payment and later credit eligibility are separate steps."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "How is RCM liability discharged?",
+          "question": "How must the buyer pay GST that is due under reverse charge?",
           "options": [
             "With any ITC",
-            "Through the cash ledger",
+            "Using deposited money in the cash ledger",
             "With a credit note only",
             "Only by the supplier"
           ],
@@ -239,7 +259,7 @@ export const module2: Module = {
         },
         {
           "type": "tf",
-          "question": "All purchases from unregistered suppliers attract RCM.",
+          "question": "Every purchase from a seller without GST registration automatically attracts reverse charge.",
           "correctBool": false,
           "explanation": "Section 9(4) is notification-specific.",
           "id": "2.3-q2",
@@ -247,7 +267,7 @@ export const module2: Module = {
         },
         {
           "type": "numeric",
-          "question": "Assumed RCM value ₹1,00,000 at 18%. Cash tax in ₹?",
+          "question": "Assume a covered reverse-charge purchase is ₹1,00,000 before GST at 18%. What is the cash tax payment, in rupees?",
           "correctNumber": 18000,
           "tolerance": 0.01,
           "explanation": "₹1,00,000 × 18% = ₹18,000.",
@@ -256,11 +276,11 @@ export const module2: Module = {
         },
         {
           "type": "mcq",
-          "question": "Section 9(5) primarily addresses liability of:",
+          "question": "For the specified services covered by section 9(5), who is responsible for GST?",
           "options": [
             "Every exporter",
             "An employee",
-            "An operator for specified services",
+            "The online operator, for the specified services",
             "Every customer"
           ],
           "correctIndex": 2,
@@ -268,57 +288,67 @@ export const module2: Module = {
           "id": "2.3-q4",
           "sectionRef": "CGST Act sections 2(82), 9(3), 9(4), 9(5), 31(3) and 49; corresponding IGST Act section 5."
         }
-      ]
+      ],
+      "learningGoal": "Understand the cases where the buyer or a platform pays GST instead of the seller.",
+      "story": "Usually Asha pays a supplier’s bill including GST, and the supplier accounts for the tax. For a specifically covered purchase, Asha may instead have to pay the GST directly to the government. This changes who pays, not whether paperwork matters.",
+      "selfCheck": {
+        "question": "Can Asha use existing purchase credit to pay ₹18,000 reverse-charge tax?",
+        "answer": "No. That liability is paid using cash. Any later eligible credit is a separate step."
+      }
     },
     {
       "id": "2.4",
       "title": "Distinct Persons, Branches & Job Work",
-      "roadmap": "Understand supplies within one organisation and movements that are not sales.",
+      "roadmap": "Tell apart a branch transfer and sending your own goods out for processing.",
       "keyTerms": [
         {
           "term": "Distinct persons",
-          "def": "Separate GST registrations treated as separate persons under section 25."
+          "def": "Separate GST registrations that the law treats as separate persons, even when one business owns them."
         },
         {
           "term": "Job work",
-          "def": "Treatment or processing of goods belonging to another registered person."
+          "def": "Processing goods that still belong to another registered business. The processor is paid for work, not automatically for the goods themselves."
+        },
+        {
+          "term": "Principal",
+          "def": "The registered business that owns goods sent for job work."
         },
         {
           "term": "Delivery challan",
-          "def": "A prescribed movement document for cases where an invoice is not appropriate."
+          "def": "A prescribed goods-movement document used in permitted cases where a sales invoice is not the right document."
         }
       ],
-      "explanation": "Separate registrations under one PAN can be distinct persons. Business transfers between them may be supplies without consideration under Schedule I. Do not use financial consolidation to conclude that a branch movement is outside GST. Related-party valuation rules can apply rather than an arbitrary book-transfer price.\n\nJob work starts with goods owned by the principal. Section 143 permits specified movements without tax subject to conditions, records and return/supply deadlines. The ordinary deadlines are one year for inputs and three years for capital goods, with statutory exclusions and possible permitted extensions. A processing fee is a separate service; the goods' ownership does not transfer merely because they move to a job worker.\n\nTrack dispatch dates, challans, quantities, returns, waste and onward supplies. Failure to meet the permitted deadline can produce a deemed supply from the original dispatch date. Tooling exclusions and direct supply from a job worker require careful reading.",
-      "legalBasis": "CGST Act sections 2(68), 25, 143 and Schedule I; CGST Rules 28, 45 and 55.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Identify the registration on each side\nTwo GST registrations under one business identity can be distinct persons. Sending stock between them can count as a supply even without charging a price. Company accounts combining both branches do not cancel this GST treatment.\n\n### 2. Identify who owns the goods\nFor job work, the principal still owns the goods. Sending fabric for stitching does not, by itself, sell the fabric to the tailor. The tailor’s processing fee is a separate service to check for GST.\n\n### 3. Track the return dates\nThe permitted job-work procedure has conditions. Ordinary return/supply deadlines are one year for inputs, such as material, and three years for capital goods, such as equipment. Specified tools and other cases have exceptions; permitted extensions also need checking.\n\n### 4. Keep a movement record\nRecord the dispatch date, challan, quantity and return or onward supply. Missing the permitted deadline can cause the goods to be treated as supplied from the original sending date. Physical movement and a taxable sale are related questions, but they are not identical.",
+      "legalBasis": "CGST Act sections 2(68), 25, 143 and Schedule I; CGST Rules 28, 45 and 55.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Branch supply",
-          "body": "A Maharashtra registration transfers stock to its Karnataka registration. Assume taxable value ₹2,00,000 and 18% IGST under the applicable facts: **₹36,000** output IGST, with recipient credit tested separately."
+          "title": "Stock sent to another State registration",
+          "body": "Assume the Maharashtra-to-Karnataka transfer is taxable, the correct value is ₹2,00,000 and the rate is 18%.\n\n1. Treat the registrations separately for GST.\n2. Use the applicable inter-State tax, IGST.\n3. GST = ₹2,00,000 × 18% = **₹36,000**.\n\nThe receiving branch separately checks whether that tax qualifies as credit."
         },
         {
-          "title": "Job-worker fee",
-          "body": "A job worker processes principal-owned material and charges ₹20,000. At an assumed 18% service rate, fee tax is **₹3,600**. The material value is not automatically the job worker service value."
+          "title": "Paying for stitching work",
+          "body": "The tailor works on Asha’s material and charges ₹20,000 for processing. Assume the service rate is 18%.\n\n1. The service value is the processing charge on these facts.\n2. GST = ₹20,000 × 18% = **₹3,600**.\n3. Track Asha’s goods separately under the job-work movement rules.\n\nDo not automatically add the whole fabric value to the processing fee."
         }
       ],
       "nuances": [
-        "Same PAN does not eliminate a distinct-person supply.",
-        "Job-work deadlines have exceptions and extension mechanisms.",
-        "Full recipient ITC eligibility matters under Rule 28."
+        "Branches can be separate GST persons even under one owner.",
+        "Job-work goods remain the principal’s property.",
+        "Missing a return deadline can create tax consequences from the original dispatch date."
       ],
       "recap": [
-        "Track branches by GST registration.",
-        "Separate material movement from processing fees.",
-        "Maintain date-wise job-work control."
+        "Check registrations for branch movements.",
+        "Check ownership for processing movements.",
+        "Track documents, quantities and deadlines."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Two State registrations with the same PAN can be:",
+          "question": "How can GST treat two State registrations belonging to one PAN?",
           "options": [
             "Always non-residents",
             "Only composition dealers",
             "Always one GST person",
-            "Distinct persons"
+            "Separate GST persons, despite common ownership"
           ],
           "correctIndex": 3,
           "explanation": "Section 25 treats separate registrations as distinct persons.",
@@ -327,7 +357,7 @@ export const module2: Module = {
         },
         {
           "type": "tf",
-          "question": "Moving goods to a job worker always transfers ownership.",
+          "question": "Sending your goods to a job worker always transfers ownership to that worker.",
           "correctBool": false,
           "explanation": "Job work processes another registered person’s goods.",
           "id": "2.4-q2",
@@ -335,7 +365,7 @@ export const module2: Module = {
         },
         {
           "type": "numeric",
-          "question": "A ₹20,000 processing fee attracts assumed 18%. Tax in ₹?",
+          "question": "A processor charges ₹20,000 for work before GST. Assume 18%. What is the GST on that fee, in rupees?",
           "correctNumber": 3600,
           "tolerance": 0.01,
           "explanation": "₹20,000 × 18% = ₹3,600.",
@@ -344,7 +374,7 @@ export const module2: Module = {
         },
         {
           "type": "mcq",
-          "question": "Ordinary input return/supply deadline under section 143, before exceptions or extension, is:",
+          "question": "Before exceptions or permitted extensions, what is the ordinary job-work return/supply deadline for inputs such as materials?",
           "options": [
             "One year",
             "One day",
@@ -356,27 +386,33 @@ export const module2: Module = {
           "id": "2.4-q4",
           "sectionRef": "CGST Act sections 2(68), 25, 143 and Schedule I; CGST Rules 28, 45 and 55."
         }
-      ]
+      ],
+      "learningGoal": "Tell apart a branch transfer and sending your own goods out for processing.",
+      "story": "Asha sends stock from her Maharashtra registration to her Karnataka registration. On another day she sends her own fabric to a tailor for stitching. The goods move in both cases, but the ownership and GST registration facts are different.",
+      "selfCheck": {
+        "question": "Is sending your fabric to a job worker automatically a sale of the fabric?",
+        "answer": "No. Under the permitted procedure the fabric remains yours. The processing fee and the movement conditions need separate checks."
+      }
     }
   ],
   "moduleQuiz": [
     {
       "type": "mcq",
-      "question": "A salary ledger includes an independent vendor fee. How should it be treated?",
+      "question": "An account labelled salary also contains an independent vendor's fee. What should you do with that fee?",
       "options": [
         "Everything is employment",
-        "Examine the actual vendor relationship separately",
+        "Check whether the person is an employee or an independent supplier",
         "Always exempt",
         "Ignore consideration"
       ],
       "correctIndex": 1,
-      "explanation": "The substance of the relationship controls the employment exclusion.",
+      "explanation": "Check the real arrangement: employee duties and independent work are different.",
       "id": "m2-q1",
       "sectionRef": "CGST Act section 7 and Schedules I, II and III."
     },
     {
       "type": "tf",
-      "question": "No consideration always means no supply.",
+      "question": "If nothing is given in return, there can never be a GST supply.",
       "correctBool": false,
       "explanation": "Schedule I can deem specified activities to be supplies without consideration.",
       "id": "m2-q2",
@@ -384,7 +420,7 @@ export const module2: Module = {
     },
     {
       "type": "numeric",
-      "question": "A natural machine-and-installation bundle is assumed composite at its principal 18% rate, value ₹2,50,000. Tax in ₹?",
+      "question": "Assume a natural machine-and-installation package qualifies as composite, its main supply rate is 18%, and value before tax is ₹2,50,000. What is GST, in rupees?",
       "correctNumber": 45000,
       "tolerance": 0.01,
       "explanation": "₹2,50,000 × 18% = ₹45,000.",
@@ -393,7 +429,7 @@ export const module2: Module = {
     },
     {
       "type": "mcq",
-      "question": "Unrelated products are separately priced on one bill. What is the proper starting point?",
+      "question": "Unrelated products have separate prices on one bill. Where should the classification review begin?",
       "options": [
         "Always a works contract",
         "Highest rate on all",
@@ -407,7 +443,7 @@ export const module2: Module = {
     },
     {
       "type": "numeric",
-      "question": "A ₹60,000 service is confirmed RCM at assumed 18%. Available ITC is ₹50,000. Minimum cash required for this RCM in ₹?",
+      "question": "A ₹60,000 service is confirmed taxable under reverse charge at 18%. You have ₹50,000 purchase credit. How much cash must pay this reverse-charge GST, in rupees?",
       "correctNumber": 10800,
       "tolerance": 0.01,
       "explanation": "The entire RCM amount ₹10,800 must be paid in cash.",
@@ -416,12 +452,12 @@ export const module2: Module = {
     },
     {
       "type": "mcq",
-      "question": "A vendor is unregistered. What should be checked first?",
+      "question": "A vendor has no GST registration. What should you check before deciding reverse charge applies?",
       "options": [
         "Whether it is Tuesday",
         "The bank balance",
         "Only invoice colour",
-        "The applicable RCM notification and recipient conditions"
+        "The official reverse-charge category and buyer conditions"
       ],
       "correctIndex": 3,
       "explanation": "Unregistered status alone is insufficient.",
@@ -430,7 +466,7 @@ export const module2: Module = {
     },
     {
       "type": "numeric",
-      "question": "Assume a taxable branch transfer value ₹2,00,000 at 18% IGST. Tax in ₹?",
+      "question": "Assume a taxable branch transfer is valued at ₹2,00,000 before IGST at 18%. What is IGST, in rupees?",
       "correctNumber": 36000,
       "tolerance": 0.01,
       "explanation": "₹2,00,000 × 18% = ₹36,000.",
@@ -439,9 +475,9 @@ export const module2: Module = {
     },
     {
       "type": "mcq",
-      "question": "Job-work inputs remain outstanding beyond the permitted period without an exception. What risk arises?",
+      "question": "Job-work materials are not returned or supplied within the permitted period, and no exception applies. What tax risk arises?",
       "options": [
-        "Deemed supply from original dispatch",
+        "Goods can be treated as supplied from the original sending date",
         "Salary tax",
         "Only a bank fee",
         "Automatic exemption"

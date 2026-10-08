@@ -4,52 +4,56 @@ export const module3: Module = {
   "id": "module-3",
   "number": 3,
   "title": "Registration & Composition",
-  "summary": "Work out liability to register, PAN-based turnover, multi-State registrations, and the consequences of choosing composition.",
+  "summary": "Work out which sales count for registration and what the small-business composition option changes.",
   "chapters": [
     {
       "id": "3.1",
       "title": "Aggregate Turnover & Registration",
-      "roadmap": "Use the correct turnover base and check compulsory-registration exceptions.",
+      "roadmap": "Add up the right sales amounts before deciding whether a business needs GST registration.",
       "keyTerms": [
         {
           "term": "Aggregate turnover",
-          "def": "PAN-wide turnover including taxable, exempt, export and inter-State supplies, with statutory exclusions."
+          "def": "The sales total GST uses for certain eligibility tests, added across India for one PAN. It includes taxable sales, exempt sales and exports, with specified exclusions."
+        },
+        {
+          "term": "PAN",
+          "def": "Permanent Account Number: the tax identity used to connect the same business’s activities across locations."
         },
         {
           "term": "GSTIN",
-          "def": "The registration number associated with a particular GST registration."
+          "def": "Goods and Services Tax Identification Number: the number given to a GST registration."
         },
         {
           "term": "Threshold",
-          "def": "A registration limit dependent on State, supply mix and notification conditions."
+          "def": "A limit that helps decide whether registration is required. The applicable limit depends on the State, supply type and legal conditions."
         }
       ],
-      "explanation": "Registration is not decided from one store's taxable sales alone. Aggregate turnover is computed across India for the same PAN. It includes exempt supplies and exports, while excluding GST amounts and inward supplies on which tax is payable by the recipient under RCM.\n\nCheck section 22, applicable threshold notifications, the State and the actual supply mix. Higher relief for exclusive suppliers of goods is conditional; it is not a universal limit for everyone. Section 23 and notified exemptions must be considered alongside section 24 compulsory categories. Inter-State services and certain e-commerce supplies have specific conditional reliefs, so \"every inter-State sale needs registration\" is too broad.\n\nPrepare a turnover bridge from the accounts and a written registration matrix by State and activity. Even below a threshold, voluntary registration brings the usual duties and potential credit entitlement, subject to the law.",
-      "legalBasis": "CGST Act sections 2(6), 22, 23, 24 and 25; applicable registration-exemption notifications.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Add sales across the same PAN\nTurnover means sales or supply value, not profit or money left in the bank. For aggregate turnover, combine the relevant activities across India under the same PAN. Include exempt sales and exports as well as taxable sales.\n\n### 2. Remove amounts that do not belong\nGST charged on sales is excluded from this turnover total. Purchases on which you pay reverse-charge tax are also excluded: they are purchases, not your sales.\n\n### 3. Find the applicable registration rule\nDo not compare every business to one universal number. The State, goods/services mix and notification conditions matter. Some categories require registration irrespective of the ordinary turnover test; some have specific relief. Inter-State and online sales need their own category check.\n\n### 4. Understand the choice to register voluntarily\nVoluntary registration can bring credit eligibility, but it also brings invoicing, payment and filing duties. Record the reason for the decision rather than treating registration as just getting a number.",
+      "legalBasis": "CGST Act sections 2(6), 22, 23, 24 and 25; applicable registration-exemption notifications.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "PAN-wide computation",
-          "body": "One PAN has ₹12 lakh taxable sales, ₹6 lakh exempt sales and ₹4 lakh exports across locations. Aggregate turnover is **₹22 lakh**, excluding GST. Compare that amount with the correctly identified applicable threshold."
+          "title": "Two shops, one PAN",
+          "body": "Assume taxable sales of ₹12 lakh, exempt sales of ₹6 lakh and exports of ₹4 lakh.\n\n1. Add them: 12 + 6 + 4 = **₹22 lakh**.\n2. Exclude GST itself.\n3. Compare ₹22 lakh with the limit and other registration rules that actually apply to this business.\n\n₹22 lakh is the computed total, not a universal registration threshold."
         },
         {
-          "title": "RCM exclusion",
-          "body": "Outward supplies are ₹18 lakh and inward RCM purchases are ₹3 lakh. Assuming no other turnover, aggregate turnover remains **₹18 lakh**; the inward RCM amount is excluded from this base."
+          "title": "Purchases are not sales",
+          "body": "A business has ₹18 lakh outward supplies and ₹3 lakh purchases covered by reverse charge.\n\n1. Start with the sales/supplies: ₹18 lakh.\n2. Do not add the reverse-charge purchases.\n3. Aggregate turnover on these facts remains **₹18 lakh**."
         }
       ],
       "nuances": [
-        "Goods-only threshold relief has conditions and State exclusions.",
-        "Export receipts are not excluded from aggregate turnover.",
-        "Compulsory categories can have notified exemptions."
+        "Turnover is not profit.",
+        "Exempt sales and exports can count in the registration total.",
+        "A low total does not override every compulsory-registration category."
       ],
       "recap": [
-        "Compute PAN-wide turnover.",
-        "Use the applicable State and supply conditions.",
-        "Read threshold and compulsory rules together."
+        "Combine relevant supplies under one PAN.",
+        "Exclude GST amounts and inward reverse-charge purchases.",
+        "Use the applicable limit and category rules."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Aggregate turnover is generally computed:",
+          "question": "How is aggregate turnover normally added up?",
           "options": [
             "Per invoice",
             "Across India for the same PAN",
@@ -57,13 +61,13 @@ export const module3: Module = {
             "Only on profits"
           ],
           "correctIndex": 1,
-          "explanation": "The statutory turnover definition is PAN-wide.",
+          "explanation": "The legal turnover definition is PAN-wide.",
           "id": "3.1-q1",
           "sectionRef": "CGST Act sections 2(6), 22, 23, 24 and 25; applicable registration-exemption notifications."
         },
         {
           "type": "tf",
-          "question": "Exports are excluded from aggregate turnover.",
+          "question": "Exports are left out of aggregate turnover.",
           "correctBool": false,
           "explanation": "Exports are included, though qualifying exports may be zero-rated.",
           "id": "3.1-q2",
@@ -71,7 +75,7 @@ export const module3: Module = {
         },
         {
           "type": "numeric",
-          "question": "Taxable sales ₹12 lakh, exempt sales ₹6 lakh and exports ₹4 lakh. Aggregate turnover in ₹?",
+          "question": "One PAN has ₹12 lakh taxable sales, ₹6 lakh exempt sales and ₹4 lakh exports, excluding GST. What is aggregate turnover, in rupees?",
           "correctNumber": 2200000,
           "tolerance": 0.01,
           "explanation": "₹12 lakh + ₹6 lakh + ₹4 lakh = ₹22 lakh.",
@@ -80,7 +84,7 @@ export const module3: Module = {
         },
         {
           "type": "mcq",
-          "question": "Which is excluded from the aggregate turnover calculation?",
+          "question": "Which amount is excluded when adding aggregate turnover?",
           "options": [
             "Exports",
             "Exempt sales",
@@ -92,66 +96,76 @@ export const module3: Module = {
           "id": "3.1-q4",
           "sectionRef": "CGST Act sections 2(6), 22, 23, 24 and 25; applicable registration-exemption notifications."
         }
-      ]
+      ],
+      "learningGoal": "Add up the right sales amounts before deciding whether a business needs GST registration.",
+      "story": "Asha owns two shops under the same business PAN. One sells taxable goods; the other also sells exempt goods. Looking at one shop’s taxable sales alone can give the wrong answer about registration.",
+      "selfCheck": {
+        "question": "Why can Asha not check just one shop’s taxable sales?",
+        "answer": "Aggregate turnover connects relevant supplies across India under the same PAN, including exempt sales and exports."
+      }
     },
     {
       "id": "3.2",
       "title": "Registration Procedure & Distinct Persons",
-      "roadmap": "Turn a liability conclusion into the right registrations and documentary record.",
+      "roadmap": "Understand what a GST registration covers and what information an application needs.",
       "keyTerms": [
         {
           "term": "Principal place of business",
-          "def": "The main business location stated in the registration."
+          "def": "The main business address declared for a GST registration."
         },
         {
           "term": "Additional place",
-          "def": "Another declared business location under the registration."
+          "def": "Another declared business location covered by that registration, such as a warehouse."
+        },
+        {
+          "term": "Authorised signatory",
+          "def": "The person permitted to submit and sign GST documents for the business."
         },
         {
           "term": "Casual taxable person",
-          "def": "A person making occasional supplies where no fixed place of business exists."
+          "def": "Someone making occasional supplies in a State or territory where they have no fixed business place; special rules apply."
         }
       ],
-      "explanation": "Ordinarily registration is State/UT based. A business supplying from fixed establishments in more than one State must analyse each establishment's registration requirement. Within a State, additional places can belong to the same registration, while separate registrations may be permitted subject to the rules.\n\nThe application needs accurate legal name, PAN, business constitution, addresses, authorised signatory and evidence supporting occupation of premises. Follow the currently applicable authentication or verification process, respond to clarification requests, and preserve the acknowledgement and certificate.\n\nA casual taxable person and a non-resident taxable person have special registration, validity and advance-tax requirements; ordinary threshold logic cannot simply be copied into those cases. Once registered, map GSTINs to invoice series, locations and reporting systems. An additional warehouse in the same State is not automatically a separate taxable person.",
-      "legalBasis": "CGST Act sections 24–27; CGST Rules 8–18. REG-01 application and REG-06 certificate.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Map the places you supply from\nGST registration is normally State or Union-territory based. An office supplying from another State needs its own registration analysis. Within one State, locations can sometimes be covered as additional places under one registration; permitted separate registrations need a separate check.\n\n### 2. Gather identity and address evidence\nThe application needs the legal business name, PAN, business type, addresses and signatory details. Keep documents showing the right to use the premises. Use the current identity-verification process and respond to requests for clarification.\n\n### 3. Save the approval and use the correct number\nAfter approval, save the registration certificate (form REG-06) and acknowledgement. Match the GSTIN to the right location, invoice series and return records. Separate registrations may be treated as distinct persons for transfers between them.\n\n### 4. Check temporary or overseas business cases separately\nA casual taxable person or a non-resident taxable person has special validity and advance-tax requirements. Do not apply an ordinary permanent-shop checklist without checking those rules.",
+      "legalBasis": "CGST Act sections 24–27; CGST Rules 8–18. REG-01 application and REG-06 certificate.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Two States",
-          "body": "A company has supplying offices in Karnataka and Maharashtra. Analyse registration in both States. If both obtain registrations, transactions between the GSTINs can involve distinct persons despite one PAN."
+          "title": "Offices in two States",
+          "body": "A business has supplying offices in Karnataka and Maharashtra.\n\n1. Review the registration requirement for each State.\n2. If each has a registration, give each office the correct GSTIN and invoice records.\n3. Review transfers between them as possible distinct-person supplies."
         },
         {
-          "title": "Same-State warehouse",
-          "body": "A registered trader opens a second warehouse in the same State. If maintained as an additional place under the same GSTIN, it is not automatically a distinct registration. Update particulars and maintain movement records."
+          "title": "A same-State warehouse",
+          "body": "Asha adds a warehouse in the same State under the existing GSTIN.\n\n1. Check that it can be declared as an additional place.\n2. Update the registration details and keep movement records.\n3. It is not automatically a separate GST person merely because it has another address."
         }
       ],
       "nuances": [
-        "Different GSTINs require separate return controls.",
-        "Registration authenticity does not prove every vendor invoice is genuine.",
-        "Special-category applicants may need advance deposits."
+        "A second address is not automatically a second GSTIN.",
+        "A supplying office in another State needs a State-specific review.",
+        "Temporary and non-resident businesses have special requirements."
       ],
       "recap": [
-        "Identify where supplies are made from.",
-        "Support the application with accurate documents.",
-        "Map every GSTIN to operational records."
+        "Map locations before applying.",
+        "Keep identity, premises and signatory documents.",
+        "Use the correct registration for each supply."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "A registration certificate is ordinarily issued in:",
+          "question": "What is the GST form REG-06?",
           "options": [
-            "GSTR-3B",
-            "DRC-07",
-            "RFD-01",
-            "REG-06"
+            "The summary payment return",
+            "An export-refund application",
+            "A sales invoice",
+            "Your GST registration certificate"
           ],
           "correctIndex": 3,
-          "explanation": "REG-06 is the registration certificate.",
+          "explanation": "REG-06 is the GST registration certificate. It records the approved registration details.",
           "id": "3.2-q1",
           "sectionRef": "CGST Act sections 24–27; CGST Rules 8–18. REG-01 application and REG-06 certificate."
         },
         {
           "type": "tf",
-          "question": "Every additional warehouse within the same State requires its own GSTIN.",
+          "question": "Every extra warehouse in the same State must have its own GSTIN.",
           "correctBool": false,
           "explanation": "It can be an additional place under an existing registration, subject to the facts.",
           "id": "3.2-q2",
@@ -159,9 +173,9 @@ export const module3: Module = {
         },
         {
           "type": "mcq",
-          "question": "Separate State GSTINs with one PAN are ordinarily:",
+          "question": "How are separate State GST registrations under one PAN ordinarily treated?",
           "options": [
-            "Distinct persons",
+            "Separate GST persons, despite common ownership",
             "The same GSTIN",
             "Outside supply",
             "Always unregistered"
@@ -173,7 +187,7 @@ export const module3: Module = {
         },
         {
           "type": "mcq",
-          "question": "A casual taxable person must consider:",
+          "question": "A business occasionally supplying where it has no fixed business place (a casual taxable person) needs to check what?",
           "options": [
             "Only profit",
             "Special registration and advance-tax rules",
@@ -185,52 +199,62 @@ export const module3: Module = {
           "id": "3.2-q4",
           "sectionRef": "CGST Act sections 24–27; CGST Rules 8–18. REG-01 application and REG-06 certificate."
         }
-      ]
+      ],
+      "learningGoal": "Understand what a GST registration covers and what information an application needs.",
+      "story": "Asha opens another warehouse in the same State and later an office supplying customers in another State. The first may fit within an existing registration; the second needs a separate State-level registration review.",
+      "selfCheck": {
+        "question": "Does a second warehouse always need a separate registration?",
+        "answer": "No. A same-State warehouse can be an additional place under the same registration, depending on the rules and arrangement."
+      }
     },
     {
       "id": "3.3",
       "title": "Composition Levy",
-      "roadmap": "Compare administrative simplicity with lost credit and restrictions.",
+      "roadmap": "Understand the trade-off behind the simpler composition system for eligible small businesses.",
       "keyTerms": [
         {
           "term": "Composition levy",
-          "def": "A conditional alternative tax mechanism for eligible small taxpayers."
+          "def": "An alternative GST payment system for eligible small businesses, with specific limits and restrictions."
         },
         {
           "term": "Bill of supply",
-          "def": "The document used instead of a tax invoice for exempt or composition supplies."
+          "def": "The sales document used for composition or exempt supplies instead of an ordinary tax invoice."
         },
         {
           "term": "Tax collection restriction",
-          "def": "A composition taxpayer cannot separately collect GST from the customer."
-        }
-      ],
-      "explanation": "Composition changes both economics and compliance. A section 10 taxpayer cannot avail ITC or separately collect tax. Customers do not obtain ordinary input credit on composition purchases. The business issues a bill of supply and pays the prescribed levy using cash.\n\nEligibility depends on PAN-linked turnover, the relevant limit, nature of supply, business exclusions and other conditions. Section 10(1) and the separate section 10(2A) framework are not interchangeable. Service allowances and inter-State outward-supply restrictions require reading the precise provision. Conditional intra-State goods supplies through e-commerce operators have been enabled; older material saying all e-commerce is prohibited is too broad.\n\nModel gross margin, lost inward credit, customer credit expectations and growth before opting in. Test eligibility throughout the year and manage the consequences of crossing a limit or breaching a condition. Never assume that a low turnover alone qualifies an otherwise excluded business.",
-      "legalBasis": "CGST Act section 10; CGST Rules 3–7; applicable composition and e-commerce notifications.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
-      "examples": [
-        {
-          "title": "Illustrative levy",
-          "body": "Assume an eligible trader has ₹10,00,000 of the applicable levy base and an assumed combined composition rate of 1%. Cash levy is **₹10,000**. This assumed rate does not establish eligibility or the actual prescribed base."
+          "def": "A composition business cannot separately charge its customer GST."
         },
         {
-          "title": "Credit cost",
-          "body": "A composition business pays ₹18,000 GST on inward purchases. It cannot take ordinary ITC, so this is generally a cost. The absence of separate tax collection does not make the cost disappear."
+          "term": "Input tax credit",
+          "def": "Eligible purchase GST used to reduce normal sales GST. Composition taxpayers cannot take this ordinary credit."
+        }
+      ],
+      "explanation": "### 1. Understand what changes\nUnder composition, the business pays the prescribed levy using cash. It cannot separately collect GST from customers and cannot take ordinary purchase-tax credit. Its customer also does not get ordinary credit from a composition purchase.\n\n### 2. Check eligibility before calculating\nTurnover under the same PAN, business type and supply conditions matter. The ordinary composition provision and the separate small-service-business framework have different rules. Inter-State outward supplies are restricted. Some intra-State goods sales through online operators are permitted subject to conditions; an old blanket ban is too broad.\n\n### 3. Compare the whole cost\nPurchase GST that cannot be credited may become a business cost. Business customers who expect credit may prefer ordinary tax invoices. Compare these effects with filing simplicity and the applicable levy.\n\n### 4. Keep checking as the business grows\nCrossing a limit or breaking a condition can change eligibility during the year. Composition is an ongoing conditional system, not a one-time promise attached to a low turnover.",
+      "legalBasis": "CGST Act section 10; CGST Rules 3–7; applicable composition and e-commerce notifications.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "examples": [
+        {
+          "title": "A simplified levy calculation",
+          "body": "Assume a trader is eligible, its correct levy base is ₹10,00,000 and the exercise rate is 1%.\n\n1. Levy = ₹10,00,000 × 1% = **₹10,000**.\n2. Pay it using cash under the scheme.\n3. Do not add it as a separately collected GST charge on the customer’s bill.\n\nThe assumed rate/base do not prove actual eligibility."
+        },
+        {
+          "title": "Purchase GST becomes a cost",
+          "body": "A composition business pays ₹18,000 GST on purchases.\n\n1. It cannot use ordinary purchase-tax credit.\n2. The ₹18,000 generally remains a cost.\n3. Include that cost when comparing composition with normal GST."
         }
       ],
       "nuances": [
-        "Inter-State outward supplies and exemptions need exact eligibility review.",
-        "All registrations on one PAN must be considered together.",
-        "Customers cannot treat a bill of supply as an ITC tax invoice."
+        "Low turnover alone does not establish eligibility.",
+        "Composition is not ordinary GST at a lower rate.",
+        "Check customer credit needs and growth plans before choosing."
       ],
       "recap": [
-        "Composition is conditional.",
-        "No ordinary ITC or separate tax collection.",
-        "Compare commercial costs before opting."
+        "Composition has eligibility conditions.",
+        "No separate customer GST collection or ordinary purchase credit.",
+        "Compare total cost, not only the percentage rate."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "A composition taxpayer normally issues:",
+          "question": "Which sales document does a composition business normally issue?",
           "options": [
             "Shipping bill only",
             "No document",
@@ -244,15 +268,15 @@ export const module3: Module = {
         },
         {
           "type": "tf",
-          "question": "A composition taxpayer can claim normal ITC on all business purchases.",
+          "question": "A composition business can claim ordinary purchase-tax credit on all business purchases.",
           "correctBool": false,
-          "explanation": "Section 10 restricts ITC.",
+          "explanation": "Section 10 restricts purchase credit (ITC).",
           "id": "3.3-q2",
           "sectionRef": "CGST Act section 10; CGST Rules 3–7; applicable composition and e-commerce notifications."
         },
         {
           "type": "numeric",
-          "question": "Assume a 1% combined levy on an applicable ₹10,00,000 base. Tax in ₹?",
+          "question": "Assume an eligible business has the correct composition levy base of ₹10,00,000 at an exercise rate of 1%. What is the levy, in rupees?",
           "correctNumber": 10000,
           "tolerance": 0.01,
           "explanation": "₹10,00,000 × 1% = ₹10,000.",
@@ -261,7 +285,7 @@ export const module3: Module = {
         },
         {
           "type": "mcq",
-          "question": "Which is a key composition consequence?",
+          "question": "Which restriction is a key part of the composition system?",
           "options": [
             "Unlimited inter-State supplies",
             "Automatic refund of input GST",
@@ -273,52 +297,62 @@ export const module3: Module = {
           "id": "3.3-q4",
           "sectionRef": "CGST Act section 10; CGST Rules 3–7; applicable composition and e-commerce notifications."
         }
-      ]
+      ],
+      "learningGoal": "Understand the trade-off behind the simpler composition system for eligible small businesses.",
+      "story": "Asha hears that composition can simplify GST. She wants to compare it with normal registration. The useful question is not just “Is the rate lower?” but also “What happens to my purchase credit and my customer’s bill?”",
+      "selfCheck": {
+        "question": "Why might composition be less attractive than it first looks?",
+        "answer": "Losing purchase credit can increase cost, and business customers do not get ordinary credit on composition purchases."
+      }
     },
     {
       "id": "3.4",
       "title": "Amendment, Cancellation & Revocation",
-      "roadmap": "Keep registration status aligned with business facts and manage exit obligations.",
+      "roadmap": "Know what to update, what closing a registration means, and when restoration is possible.",
       "keyTerms": [
         {
+          "term": "Amendment",
+          "def": "Updating permitted details in an existing registration, such as an address or signatory."
+        },
+        {
           "term": "Cancellation",
-          "def": "Termination of GST registration through the prescribed procedure."
+          "def": "Ending a GST registration. Earlier unpaid tax and filing duties can still remain."
         },
         {
           "term": "Revocation",
-          "def": "Restoration of an officer-cancelled registration when legal conditions are met."
+          "def": "Restoring a registration cancelled by an officer, through the permitted process and conditions."
         },
         {
           "term": "Final return",
-          "def": "A prescribed closing return for applicable cancelled registrations."
+          "def": "A closing GST return required in applicable cancellation cases."
         }
       ],
-      "explanation": "A change in business address, signatory or other particulars may need an amendment. A change in PAN usually cannot be handled as a simple amendment because registration is PAN-linked. Business closure, transfer or statutory defaults can lead to cancellation, but cancellation does not erase earlier liabilities.\n\nReview stock and capital-goods consequences under section 29(5), outstanding returns and applicable final-return obligations. Respond to show-cause notices rather than assuming that an application alone closes the registration. Suspension and cancellation can affect the ability to issue valid taxable invoices.\n\nRevocation applies to prescribed officer-initiated cancellations, not every voluntary closure. Its application deadlines, extension provisions and return-filing requirements must be checked in the current rules. Special ITC relief on restored registrations under section 16(6) also has specific timing conditions. Maintain a cancellation chronology and a written closure checklist.",
-      "legalBasis": "CGST Act sections 16(6), 28–30 and 45; CGST Rules 19–23 and 81.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Identify what changed\nAn address change can need an amendment. A change to the business’s PAN usually needs a fresh registration analysis rather than editing the old name. PAN means the underlying tax identity.\n\n### 2. Treat closure as a checklist\nCheck pending returns, unpaid amounts, goods still held and equipment on which credit was claimed. Cancellation does not erase the old obligations. Follow the notice/application process and applicable final-return requirements.\n\n### 3. Check the tax on closing stock\nThe cancellation rules can require comparing specified purchase-credit and output-tax amounts. Use the prescribed calculation; do not assume remaining stock has no GST consequence because trading has stopped.\n\n### 4. Restore only through the relevant process\nRevocation is for prescribed officer-initiated cancellations, not every voluntary closure. Check application timing, required returns and special credit-restoration conditions. Keep the dates and documents in order.",
+      "legalBasis": "CGST Act sections 16(6), 28–30 and 45; CGST Rules 19–23 and 81.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "PAN change",
-          "body": "A proprietor incorporates a company with a different PAN. Analyse fresh registration and the legal business transfer; do not merely overwrite the old registration name."
+          "title": "Changing the legal business identity",
+          "body": "A sole proprietor forms a company with a different PAN.\n\n1. Recognise that the tax identity has changed.\n2. Review fresh registration and the business-transfer rules.\n3. Do not simply replace the name on the proprietor’s old GSTIN."
         },
         {
-          "title": "Closing stock liability",
-          "body": "Assume the legally determined stock/capital-goods credit reversal amount is ₹24,000 and the relevant output-tax amount for section 29(5) comparison is ₹30,000. Under the higher-of test on these facts, payable amount is **₹30,000**."
+          "title": "Closing-stock comparison",
+          "body": "Assume the relevant cancellation calculation gives ₹24,000 credit-related amount and ₹30,000 output-tax amount, with a higher-of rule applying.\n\n1. Compare ₹24,000 and ₹30,000.\n2. The higher amount is **₹30,000**.\n3. Follow the required payment/reporting procedure."
         }
       ],
       "nuances": [
-        "Cancellation can be retrospective and must be examined for its consequences.",
-        "Earlier tax, interest and filing duties can survive cancellation.",
-        "Use current revocation deadlines rather than an old fixed-day checklist."
+        "Cancellation does not wipe out earlier dues.",
+        "A PAN change is usually more than an address-style amendment.",
+        "Restoration requires the relevant cancellation type, deadlines and conditions."
       ],
       "recap": [
-        "Amend particulars promptly.",
-        "Cancellation does not erase liabilities.",
-        "Differentiate revocation from fresh registration."
+        "Match the process to the change.",
+        "Check stock, returns and unpaid amounts on closure.",
+        "Keep cancellation and restoration dates documented."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "A change of PAN generally calls for:",
+          "question": "The business changes to a different PAN. What is the appropriate starting point?",
           "options": [
             "Fresh registration analysis",
             "No action",
@@ -332,7 +366,7 @@ export const module3: Module = {
         },
         {
           "type": "tf",
-          "question": "Cancellation automatically waives all prior GST liability.",
+          "question": "Cancelling registration automatically removes every old GST amount owed.",
           "correctBool": false,
           "explanation": "Past liabilities survive cancellation under the Act.",
           "id": "3.4-q2",
@@ -340,7 +374,7 @@ export const module3: Module = {
         },
         {
           "type": "numeric",
-          "question": "Applicable section 29(5) comparison amounts are ₹24,000 and ₹30,000. Higher amount in ₹?",
+          "question": "Assume a cancellation calculation requires the higher of ₹24,000 and ₹30,000. What amount applies, in rupees?",
           "correctNumber": 30000,
           "tolerance": 0.01,
           "explanation": "On these assumptions, the higher amount is ₹30,000.",
@@ -349,7 +383,7 @@ export const module3: Module = {
         },
         {
           "type": "mcq",
-          "question": "Revocation ordinarily concerns:",
+          "question": "Which situation does registration revocation normally address?",
           "options": [
             "Annual return only",
             "Officer-cancelled registration",
@@ -361,13 +395,19 @@ export const module3: Module = {
           "id": "3.4-q4",
           "sectionRef": "CGST Act sections 16(6), 28–30 and 45; CGST Rules 19–23 and 81."
         }
-      ]
+      ],
+      "learningGoal": "Know what to update, what closing a registration means, and when restoration is possible.",
+      "story": "Asha changes her shop address. Later she considers closing the business. Updating an address, cancelling a registration and restoring an officer-cancelled registration are three different processes.",
+      "selfCheck": {
+        "question": "Can a closed GST registration still have old tax to pay?",
+        "answer": "Yes. Cancellation ends registration but does not erase liabilities from earlier periods."
+      }
     }
   ],
   "moduleQuiz": [
     {
       "type": "numeric",
-      "question": "One PAN has taxable sales ₹8 lakh in State A, ₹9 lakh in State B and exempt sales ₹5 lakh. Aggregate turnover in ₹?",
+      "question": "One PAN has ₹8 lakh taxable sales in State A, ₹9 lakh in State B and ₹5 lakh exempt sales, excluding GST. What is aggregate turnover, in rupees?",
       "correctNumber": 2200000,
       "tolerance": 0.01,
       "explanation": "₹8 lakh + ₹9 lakh + ₹5 lakh = ₹22 lakh.",
@@ -376,7 +416,7 @@ export const module3: Module = {
     },
     {
       "type": "mcq",
-      "question": "A service exporter below the normal threshold asks whether registration is mandatory. Best response?",
+      "question": "A service exporter below the normal turnover limit asks whether registration is compulsory. What is the sound response?",
       "options": [
         "Use net profit",
         "Always yes without exception",
@@ -390,12 +430,12 @@ export const module3: Module = {
     },
     {
       "type": "mcq",
-      "question": "A business supplies from fixed establishments in two States. Its registration plan should:",
+      "question": "A business supplies from fixed offices in two States. What should its registration review cover?",
       "options": [
         "Use only the warehouse address",
         "Ignore PAN",
         "Consider only the head office",
-        "Assess both establishments and State-wise requirements"
+        "Check registration for each supplying office and State"
       ],
       "correctIndex": 3,
       "explanation": "Analyse each supplying establishment and the applicable provisions.",
@@ -404,7 +444,7 @@ export const module3: Module = {
     },
     {
       "type": "tf",
-      "question": "Adding a same-State warehouse under the same GSTIN automatically creates a distinct person.",
+      "question": "Adding a warehouse under the same State GSTIN automatically creates a distinct GST person.",
       "correctBool": false,
       "explanation": "Distinct-person treatment follows separate registrations, not each listed place.",
       "id": "m3-q4",
@@ -412,7 +452,7 @@ export const module3: Module = {
     },
     {
       "type": "numeric",
-      "question": "Assume composition levy ₹10,000 plus inward GST of ₹18,000 with no ITC. Combined levy and uncredited input-tax cost in ₹?",
+      "question": "Assume composition levy ₹10,000 and purchase GST ₹18,000 with no credit. What is their combined tax cost, before other costs, in rupees?",
       "correctNumber": 28000,
       "tolerance": 0.01,
       "explanation": "₹10,000 + ₹18,000 = ₹28,000, before other costs.",
@@ -421,9 +461,9 @@ export const module3: Module = {
     },
     {
       "type": "mcq",
-      "question": "A trader wants composition while selling goods through an operator. What should be checked?",
+      "question": "A trader wants composition while selling through an online operator. What should be checked?",
       "options": [
-        "Current conditional permissions and intra-State restrictions",
+        "The current permitted cases, conditions and within-State restrictions",
         "Ignore section 10",
         "Only website revenue",
         "Assume all e-commerce is prohibited"
@@ -435,10 +475,10 @@ export const module3: Module = {
     },
     {
       "type": "mcq",
-      "question": "A trader closes business while holding stock with past ITC. Which issue needs review?",
+      "question": "A business closes while holding goods on which credit was claimed. Which matters need review?",
       "options": [
         "Only shop keys",
-        "Section 29(5), outstanding filings and final return",
+        "Closing-stock tax, pending filings and any required final return",
         "Only new stationery",
         "No GST consequences"
       ],
@@ -449,7 +489,7 @@ export const module3: Module = {
     },
     {
       "type": "tf",
-      "question": "A PAN-changing restructuring is always dealt with by amending the old GSTIN.",
+      "question": "Changing to a different PAN is always handled by simply editing the old GSTIN.",
       "correctBool": false,
       "explanation": "Fresh registration and transfer provisions need review.",
       "id": "m3-q8",

@@ -4,66 +4,74 @@ export const module9: Module = {
   "id": "module-9",
   "number": 9,
   "title": "Exports, Imports & Refunds",
-  "summary": "Establish zero-rating, document cross-border supplies, and compute only the refund category supported by the facts.",
+  "summary": "Check overseas transactions and learn how permitted refund routes and calculations work.",
   "chapters": [
     {
       "id": "9.1",
       "title": "Export of Services & SEZ Evidence",
-      "roadmap": "Apply all export conditions and collect authorised-operation evidence for SEZ supplies.",
+      "roadmap": "Check the full service-export conditions and the evidence for an SEZ supply.",
       "keyTerms": [
         {
+          "term": "SEZ",
+          "def": "Special Economic Zone: an officially designated area with special business and tax rules. Selling to a business there needs extra checks before the special GST treatment applies."
+        },
+        {
           "term": "LUT",
-          "def": "A Letter of Undertaking supporting qualifying zero-rated supplies without IGST payment."
+          "def": "Letter of Undertaking: the prescribed declaration used for qualifying zero-rated supplies without paying IGST upfront, subject to conditions."
         },
         {
           "term": "Authorised operations",
-          "def": "SEZ operations relevant to the statutory zero-rated supply category."
+          "def": "The activities an SEZ business is officially permitted to carry out; the zero-rated supply must be for these purposes."
         },
         {
           "term": "Permitted INR receipt",
-          "def": "A service-export receipt in Indian rupees where permitted by the RBI."
-        }
-      ],
-      "explanation": "Service exports must satisfy every section 2(6) condition. Establish supplier and recipient locations, place outside India, qualifying payment receipt and the distinct-establishment test. A foreign billing address or foreign currency does not independently prove an export.\n\nAn Indian head office supplying its own overseas branch raises the establishment condition; a separate foreign customer company needs its own facts rather than an automatic same-group exclusion. Some foreign-currency transactions can still have an Indian place of supply under a special rule.\n\nFor SEZ supplies, zero-rating is tied to authorised operations. Preserve prescribed endorsements and evidence of admission/receipt, and identify who can claim the relevant refund. Supplies to an SEZ for authorised operations are inter-State under the statutory framework, even if both locations are geographically in one State. Recipient status alone is insufficient.",
-      "legalBasis": "IGST Act sections 2(6), 7(5), 13 and 16; CGST Rules 89 and 96A.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
-      "examples": [
-        {
-          "title": "Service export",
-          "body": "Assume a ₹3,00,000 own-account consultancy satisfies every export condition and is supplied under a valid LUT. Output IGST is **₹0** on that route, while eligible ITC/refund is assessed under the prescribed rules."
+          "def": "Receiving export-service payment in Indian rupees where RBI rules permit it. INR means Indian rupees; RBI is India’s central bank."
         },
         {
-          "title": "Same-State SEZ",
-          "body": "A supplier and SEZ unit are both in Gujarat. For an authorised-operation supply, geographic co-location does not create an ordinary intra-State supply; the special inter-State and zero-rated rules must be applied."
+          "term": "Zero-rated",
+          "def": "A special export/qualifying-SEZ treatment that can preserve eligible purchase credit."
+        }
+      ],
+      "explanation": "### 1. Check all service-export facts\nFor Dev’s work to count as an export of services, he must be in India, his customer must be outside India, and the GST location rules must place the service outside India. Payment must meet the foreign-currency or permitted-rupee conditions. Dev and the customer also cannot be merely branches of the same person. Every condition must fit; a foreign address alone is not enough.\n\n### 2. Check whether this is your own overseas establishment\nAn Indian head office supplying its own overseas branch raises the establishment restriction. A separately incorporated foreign customer, even in the same group, needs analysis of its own facts rather than an automatic branch result.\n\n### 3. Choose the permitted payment route\nA valid LUT can support a qualifying zero-rated supply without paying IGST upfront. Purchase-credit eligibility and any refund are separate checks. “Zero-rated” does not guarantee a refund of every purchase tax amount.\n\n### 4. Gather SEZ evidence\nConfirm that the supply is for authorised operations and keep the required official confirmation and evidence that the service or goods were received. A qualifying supply to an SEZ is treated as inter-State even where both locations are in the same State. The special legal category overrides the ordinary geographic shortcut.",
+      "legalBasis": "IGST Act sections 2(6), 7(5), 13 and 16; CGST Rules 89 and 96A.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "examples": [
+        {
+          "title": "A qualifying service export under LUT",
+          "body": "Assume Dev’s ₹3,00,000 own-account consultancy meets every export condition and uses a valid LUT.\n\n1. Use the permitted no-upfront-IGST route.\n2. Output IGST on these facts is **₹0**.\n3. Review eligible purchase credit and any refund separately."
+        },
+        {
+          "title": "An SEZ customer in the same State",
+          "body": "Supplier and SEZ unit are both in Gujarat; the supply is for authorised operations.\n\n1. Confirm the qualifying purpose and prescribed evidence.\n2. Apply the special inter-State/zero-rated framework.\n3. Do not treat it as an ordinary intra-State sale solely because both addresses say Gujarat."
         }
       ],
       "nuances": [
-        "A zero-rated route does not waive blocked-credit rules.",
-        "A foreign branch is not automatically a separate foreign customer.",
-        "SEZ endorsement and authorised purpose must be documented."
+        "A foreign invoice alone does not establish export of services.",
+        "An overseas branch and a separate foreign customer are not identical arrangements.",
+        "SEZ zero-rating needs the authorised purpose and evidence."
       ],
       "recap": [
-        "Test export conditions cumulatively.",
-        "Choose a lawful zero-rated route.",
-        "Collect SEZ purpose and receipt evidence."
+        "Test every export condition.",
+        "Use the permitted zero-rated route.",
+        "Keep SEZ purpose and receipt evidence."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Export-of-services conditions are:",
+          "question": "How do the service-export conditions work together?",
           "options": [
             "Alternative choices",
-            "Cumulative requirements",
+            "All the conditions must be met together",
             "Only a bank test",
             "Only a postcode test"
           ],
           "correctIndex": 1,
-          "explanation": "All statutory conditions must hold.",
+          "explanation": "All legal conditions must hold.",
           "id": "9.1-q1",
           "sectionRef": "IGST Act sections 2(6), 7(5), 13 and 16; CGST Rules 89 and 96A."
         },
         {
           "type": "tf",
-          "question": "Every supply to an SEZ address is automatically zero-rated.",
+          "question": "Every sale to an SEZ address automatically qualifies as zero-rated.",
           "correctBool": false,
           "explanation": "Authorised operations and other conditions matter.",
           "id": "9.1-q2",
@@ -71,7 +79,7 @@ export const module9: Module = {
         },
         {
           "type": "numeric",
-          "question": "Qualifying ₹3,00,000 export under a valid no-IGST LUT route. Output IGST in ₹?",
+          "question": "Assume a ₹3,00,000 service export qualifies under a valid LUT route without IGST payment. What is output IGST, in rupees?",
           "correctNumber": 0,
           "tolerance": 0.01,
           "explanation": "The stated LUT route supplies without payment of IGST.",
@@ -80,11 +88,11 @@ export const module9: Module = {
         },
         {
           "type": "mcq",
-          "question": "Same-State supplier and SEZ authorised-operation supply is classified under:",
+          "question": "Which framework covers a qualifying authorised-operation SEZ supply even when seller and SEZ are in one State?",
           "options": [
             "No supply ever",
             "Ordinary intra-State rule only",
-            "Special inter-State framework",
+            "The special inter-State treatment for qualifying SEZ supplies",
             "Income tax only"
           ],
           "correctIndex": 2,
@@ -92,52 +100,62 @@ export const module9: Module = {
           "id": "9.1-q4",
           "sectionRef": "IGST Act sections 2(6), 7(5), 13 and 16; CGST Rules 89 and 96A."
         }
-      ]
+      ],
+      "learningGoal": "Check the full service-export conditions and the evidence for an SEZ supply.",
+      "story": "Dev invoices a foreign customer, while Asha supplies an Indian Special Economic Zone business. Both may qualify for zero-rated treatment, but neither a foreign address nor an SEZ address completes the required checks.",
+      "selfCheck": {
+        "question": "Can a Gujarat-to-Gujarat SEZ supply be treated as inter-State?",
+        "answer": "Yes. The special SEZ rules can make it inter-State despite both locations being in the same State."
+      }
     },
     {
       "id": "9.2",
       "title": "Import of Goods & Import of Services",
-      "roadmap": "Distinguish customs tax from service RCM and determine what is eligible credit.",
+      "roadmap": "Understand how importing a product differs from buying a service from abroad.",
       "keyTerms": [
         {
           "term": "Bill of entry",
-          "def": "The customs document relevant to goods import and associated import tax evidence."
+          "def": "The customs document for imported goods, relevant to the import value, duties and eligible import-GST credit."
         },
         {
           "term": "Import of services",
-          "def": "Supplier outside India, recipient in India and place of supply in India."
+          "def": "A service meeting the location conditions: supplier outside India, recipient in India and place of supply in India."
         },
         {
-          "term": "Basic customs duty",
-          "def": "A customs levy generally outside the GST credit mechanism."
+          "term": "Basic customs duty (BCD)",
+          "def": "A customs charge on covered imports. It is generally not ordinary GST purchase credit."
+        },
+        {
+          "term": "Import IGST",
+          "def": "Integrated GST charged on covered imported goods through the customs framework."
         }
       ],
-      "explanation": "Imported goods are subject to the customs framework. Import IGST is calculated on the prescribed customs value base, not just the foreign seller invoice. Basic customs duty and applicable additions can enter the import IGST base, while credit is assessed separately from customs cost. A valid bill of entry and other eligibility conditions support import-IGST credit.\n\nFor services, the statutory import definition uses supplier, recipient and place-of-supply locations. Business imports can attract recipient RCM under the relevant notification. Cash payment and eligible ITC are separate steps. Personal imports and online-service categories have their own rules; don't carry one generic import result across all services.\n\nReconcile foreign vendor bills, exchange-rate rules, customs documents, RCM ledger and receipt evidence. The foreign vendor not charging Indian GST does not itself imply that no Indian tax is due.",
-      "legalBasis": "IGST Act sections 2(11), 5 and 13; Customs Tariff Act section 3(7)/(8); CGST Act sections 16/17 and relevant import-service RCM notification.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. For goods, establish the customs calculation\nImport IGST uses the prescribed customs value base. That can include basic customs duty and other required additions, not just the foreign invoice price. Customs valuation and GST-credit eligibility are separate checks.\n\n### 2. Separate import tax from customs cost\nA valid bill of entry and the normal conditions can support eligible import-IGST credit. Basic customs duty is generally not GST ITC. Keep these amounts in separate categories.\n\n### 3. For services, apply the three location tests\nCheck where the supplier and recipient are and where the law places the supply. A qualifying business-service import can attract buyer reverse charge under the relevant notification. Pay the required GST in cash, then test credit eligibility.\n\n### 4. Do not generalise every overseas purchase\nPersonal imports and specified online-service categories have their own rules. Review the transaction, exchange-rate requirements, documents and receipt evidence. No Indian GST on the overseas vendor’s bill does not automatically mean no Indian GST obligation.",
+      "legalBasis": "IGST Act sections 2(11), 5 and 13; Customs Tariff Act section 3(7)/(8); CGST Act sections 16/17 and relevant import-service RCM notification.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "Simplified goods import",
-          "body": "Assume customs assessable value ₹1,00,000 and includible basic duty ₹10,000; no other additions. At assumed 18%, import IGST on ₹1,10,000 is **₹19,800**. BCD ₹10,000 is not ordinary GST ITC."
+          "title": "A simplified goods-import bill",
+          "body": "Assume customs assessable value ₹1,00,000, includible basic duty ₹10,000, no other additions and IGST rate 18%.\n\n1. IGST base = ₹1,10,000.\n2. IGST = ₹1,10,000 × 18% = **₹19,800**.\n3. Check credit eligibility for IGST separately; **₹10,000 BCD is not ordinary GST ITC**."
         },
         {
-          "title": "Service import RCM",
-          "body": "Assume a qualifying business service import worth ₹50,000 attracts recipient RCM at 18%. Pay **₹9,000** in cash, then separately establish eligible ITC. The foreign invoice contains no Indian GST charge."
+          "title": "A covered overseas business service",
+          "body": "Assume a ₹50,000 business-service import attracts reverse charge at 18%.\n\n1. Indian reverse-charge GST = **₹9,000**.\n2. Pay it in cash through the prescribed process.\n3. Then check if ₹9,000 qualifies for purchase credit.\n\nThe foreign bill can show no Indian tax and this liability can still arise."
         }
       ],
       "nuances": [
-        "Surcharge and other customs additions are excluded only by the example assumptions.",
-        "Import-service RCM is not all captured by ordinary GSTR-2B vendor matching.",
-        "OIDAR and other special categories need dedicated analysis."
+        "The foreign invoice amount is not always the full import-IGST base.",
+        "Basic customs duty and eligible import-IGST credit are different.",
+        "Service imports need location and category checks."
       ],
       "recap": [
-        "Compute goods import IGST on the prescribed base.",
-        "Separate customs duties from GST credit.",
-        "Check service import RCM and place rules."
+        "Goods imports use customs value and documents.",
+        "Service imports can require buyer reverse charge.",
+        "Tax payment and credit eligibility remain separate."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Which is not ordinary GST input credit?",
+          "question": "Which charge is not ordinary GST purchase credit?",
           "options": [
             "Eligible domestic CGST",
             "Eligible domestic SGST",
@@ -145,21 +163,21 @@ export const module9: Module = {
             "Basic customs duty"
           ],
           "correctIndex": 3,
-          "explanation": "BCD is a customs cost outside ordinary GST ITC.",
+          "explanation": "BCD is a customs cost outside ordinary GST purchase credit (ITC).",
           "id": "9.2-q1",
           "sectionRef": "IGST Act sections 2(11), 5 and 13; Customs Tariff Act section 3(7)/(8); CGST Act sections 16/17 and relevant import-service RCM notification."
         },
         {
           "type": "tf",
-          "question": "A foreign service invoice without Indian GST means no Indian RCM can arise.",
+          "question": "If a foreign supplier's service bill has no Indian GST, the Indian buyer can never owe reverse-charge GST.",
           "correctBool": false,
-          "explanation": "Recipient RCM can apply to qualifying imports.",
+          "explanation": "customer/receiving business RCM can apply to qualifying imports.",
           "id": "9.2-q2",
           "sectionRef": "IGST Act sections 2(11), 5 and 13; Customs Tariff Act section 3(7)/(8); CGST Act sections 16/17 and relevant import-service RCM notification."
         },
         {
           "type": "numeric",
-          "question": "Assumed import IGST base ₹1,10,000 at 18%. IGST in ₹?",
+          "question": "Assume the correct import-IGST base is ₹1,10,000 at 18%. What is import IGST, in rupees?",
           "correctNumber": 19800,
           "tolerance": 0.01,
           "explanation": "₹1,10,000 × 18% = ₹19,800.",
@@ -168,7 +186,7 @@ export const module9: Module = {
         },
         {
           "type": "mcq",
-          "question": "Goods-import tax evidence ordinarily includes:",
+          "question": "Which document ordinarily supports the tax details for goods imports?",
           "options": [
             "Bill of entry",
             "Only a salary slip",
@@ -176,59 +194,69 @@ export const module9: Module = {
             "Only an annual-return screenshot"
           ],
           "correctIndex": 0,
-          "explanation": "The prescribed customs document supports import IGST evidence.",
+          "explanation": "The required customs document supports import IGST evidence.",
           "id": "9.2-q4",
           "sectionRef": "IGST Act sections 2(11), 5 and 13; Customs Tariff Act section 3(7)/(8); CGST Act sections 16/17 and relevant import-service RCM notification."
         }
-      ]
+      ],
+      "learningGoal": "Understand how importing a product differs from buying a service from abroad.",
+      "story": "Asha imports equipment and Dev buys an overseas business service. One goes through customs documents; the other can require the Indian buyer to pay reverse-charge GST. A foreign supplier’s tax-free invoice does not settle Indian tax.",
+      "selfCheck": {
+        "question": "Why is the goods-import example taxed on ₹1,10,000 rather than ₹1,00,000?",
+        "answer": "Its stated customs base includes ₹10,000 basic duty in addition to the assessable value."
+      }
     },
     {
       "id": "9.3",
       "title": "LUT, Export Records & Refund Routes",
-      "roadmap": "Choose a permitted route and keep the export evidence internally consistent.",
+      "roadmap": "Choose a permitted export route and keep records that support it.",
       "keyTerms": [
         {
+          "term": "LUT/bond route",
+          "def": "The prescribed route for qualifying zero-rated supplies without paying IGST upfront, subject to conditions."
+        },
+        {
           "term": "Zero-rated refund route",
-          "def": "The applicable statutory/rule route for eligible export or SEZ refunds."
+          "def": "A permitted legal process for obtaining the relevant export/SEZ refund, with its own eligibility and evidence."
         },
         {
           "term": "Shipping bill",
-          "def": "The customs document central to goods export evidence and specified refund processes."
+          "def": "The customs export document used as key evidence for goods exports and specified refund processes."
         },
         {
           "term": "Realisation evidence",
-          "def": "Proof of export proceeds receipt where required by the applicable framework."
+          "def": "Proof that export proceeds were received where the applicable rules require it."
         }
       ],
-      "explanation": "The LUT/bond route supports qualifying zero-rated supplies without paying IGST, with eligible unutilised-credit refunds governed by section 54 and the rules. The IGST-paid refund route is restricted to the notified classes of persons or supplies under amended IGST section 16; it is not an unrestricted choice for every exporter.\n\nFile the applicable LUT, use the prescribed invoice endorsement, and observe Rule 96A conditions for export and proceeds realisation. Goods and services use different timelines and evidence. Keep invoice, shipping bill/service contract, return values, export evidence and bank documents aligned.\n\nFor goods export refunds, shipping/customs and return-data validation can affect processing. For services, contract and place-of-supply analysis remain essential. Export-duty goods and other restrictions can exclude a refund route. A zero-rated supply does not guarantee refund of the entire credit-ledger balance.",
-      "legalBasis": "IGST Act section 16(3)–(5); CGST Act section 54; CGST Rules 89, 96 and 96A.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "explanation": "### 1. Understand the two broad approaches\nA qualifying LUT/bond route avoids upfront IGST and can support a permitted refund of eligible unused purchase credit. The IGST-paid refund route is limited to the notified classes of persons or supplies under the amended framework. It is not an unrestricted choice for every exporter.\n\n### 2. Prepare documents before sending the supply\nComplete the applicable LUT and invoice wording. For goods, align invoice, shipping bill and export evidence. For services, keep the contract, location analysis and relevant payment evidence.\n\n### 3. Track the relevant timelines\nGoods export and service-payment conditions have different timing rules. Check the prescribed extensions, consequences and restrictions for the particular route. Certain export-duty goods and other excluded cases can affect refund availability.\n\n### 4. Reconcile before applying\nCompare returns with customs/service documents and bank records. A zero-rated sale does not guarantee refund of the full credit balance. Each refund needs the right category, eligible components and calculation.",
+      "legalBasis": "IGST Act section 16(3)–(5); CGST Act section 54; CGST Rules 89, 96 and 96A.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
       "examples": [
         {
-          "title": "LUT evidence pack",
-          "body": "For a ₹2,00,000 goods export under LUT, retain the LUT, correctly endorsed invoice, shipping bill and proof of export. No output IGST is charged on the stated route; credit eligibility and refund computation remain separate."
+          "title": "Goods sent under LUT",
+          "body": "Assume a ₹2,00,000 goods export qualifies for the LUT route.\n\n1. Keep the valid LUT and required invoice endorsement.\n2. Save the shipping bill and proof of export.\n3. No output IGST is charged on the stated route.\n4. Calculate any eligible unused-credit refund separately."
         },
         {
-          "title": "Route restriction",
-          "body": "An exporter wants to pay ₹36,000 IGST on a ₹2,00,000 assumed 18% supply and claim it back. First establish eligibility for the notified IGST-paid route; a large ledger balance does not create that eligibility."
+          "title": "An exporter wants the tax-paid route",
+          "body": "An exporter proposes ₹36,000 IGST on a ₹2,00,000 supply at assumed 18% and wants a refund.\n\n1. Check whether the exporter/supply is covered by the notified route.\n2. Confirm the remaining conditions and evidence.\n3. A large purchase-credit balance does not, by itself, permit that route."
         }
       ],
       "nuances": [
-        "LUT is not a substitute for proving export.",
-        "IGST-paid refund availability depends on notified scope.",
-        "Non-realisation or delayed export can have tax/refund consequences."
+        "Paying IGST and claiming it back is not automatically available to every exporter.",
+        "Goods and services have different evidence/timing requirements.",
+        "Unused credit is not automatically fully refundable."
       ],
       "recap": [
-        "Choose a legally available route.",
-        "Align invoice, returns and export evidence.",
-        "Monitor export and realisation conditions."
+        "Choose an eligible route first.",
+        "Keep invoice, export and payment evidence aligned.",
+        "Calculate the permitted refund separately."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "The IGST-paid refund route is:",
+          "question": "Is paying export IGST and claiming it back freely available to every exporter?",
           "options": [
             "Unconditionally open to every export",
-            "Subject to the amended statutory and notified scope",
+            "Only for the classes of exporters or supplies permitted by the rules",
             "Only a domestic exempt refund",
             "Always a cash-ledger transfer"
           ],
@@ -239,7 +267,7 @@ export const module9: Module = {
         },
         {
           "type": "tf",
-          "question": "A valid LUT alone proves that a supply is an export.",
+          "question": "Having a valid LUT alone proves every supply is a qualifying export.",
           "correctBool": false,
           "explanation": "The underlying export facts and evidence must also be established.",
           "id": "9.3-q2",
@@ -247,7 +275,7 @@ export const module9: Module = {
         },
         {
           "type": "numeric",
-          "question": "Qualifying export value ₹2,00,000 under a valid no-IGST LUT route. Output IGST in ₹?",
+          "question": "Assume a ₹2,00,000 export qualifies under a valid LUT route without IGST payment. What is output IGST, in rupees?",
           "correctNumber": 0,
           "tolerance": 0.01,
           "explanation": "The route supplies without payment of IGST.",
@@ -256,7 +284,7 @@ export const module9: Module = {
         },
         {
           "type": "mcq",
-          "question": "A useful export evidence set should reconcile:",
+          "question": "Which records should an export evidence file bring into agreement?",
           "options": [
             "Only the bank balance",
             "Only the supplier PAN",
@@ -268,57 +296,67 @@ export const module9: Module = {
           "id": "9.3-q4",
           "sectionRef": "IGST Act section 16(3)–(5); CGST Act section 54; CGST Rules 89, 96 and 96A."
         }
-      ]
+      ],
+      "learningGoal": "Choose a permitted export route and keep records that support it.",
+      "story": "Asha wants to export goods without paying IGST upfront. Another exporter wants to pay IGST and ask for it back. The available route depends on the rules, not simply on which option seems easiest.",
+      "selfCheck": {
+        "question": "What should be checked before choosing the IGST-paid refund route?",
+        "answer": "Whether the relevant exporter or supply is within the notified classes, plus the route’s remaining conditions."
+      }
     },
     {
       "id": "9.4",
       "title": "Refund Computation & Procedure",
-      "roadmap": "Apply the correct formula, relevant date and documentary requirements.",
+      "roadmap": "Identify the refund category before calculating how much can be claimed.",
       "keyTerms": [
         {
           "term": "Net ITC",
-          "def": "The credit component defined for a particular refund formula."
+          "def": "The eligible purchase-credit figure defined for the particular refund formula, not automatically every credit in the ledger."
         },
         {
           "term": "Adjusted total turnover",
-          "def": "The prescribed denominator in the relevant refund computation."
+          "def": "The sales/supply total as specifically defined for the refund formula’s denominator."
         },
         {
           "term": "Inverted duty structure",
-          "def": "An eligible situation involving input-goods rates exceeding output rates, with exclusions."
-        }
-      ],
-      "explanation": "Identify the refund category before calculating: excess cash balance, excess/wrong tax, zero-rated unutilised credit, inverted-rate accumulation or another statutory category. The eligible inputs, formula, limitation and supporting documents differ. The general two-year section 54 period uses a category-specific relevant date and has exceptions; it is not a universal invoice-date deadline.\n\nFor the Rule 89(4) LUT zero-rated formula, maximum refund broadly uses eligible zero-rated turnover divided by adjusted total turnover multiplied by the defined Net ITC. Apply the complete definitions, exclusions and limits for the case. Capital-goods credits are not simply inserted into that Net ITC figure.\n\nInverted-rate refunds have their own formula and input-goods focus; copying the export formula or all input-services credit is incorrect. Finance Act 2026 contains refund amendments requiring commencement checks. Submit the prescribed application/evidence, track deficiencies, reply to proposed rejection and reconcile sanctioned amounts with ledgers.",
-      "legalBasis": "CGST Act sections 54–56; CGST Rules 89–97A; Rule 89(4) and 89(5) category-specific formulae.\n\n[Read the GST Acts on CBIC](https://cbic-gst.gov.in/gst-acts.html) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
-      "examples": [
-        {
-          "title": "Simplified LUT formula",
-          "body": "Assume qualifying zero-rated turnover ₹4,00,000, adjusted total turnover ₹10,00,000 and correctly defined Net ITC ₹50,000, with no other constraints. Maximum formula amount = 4/10 × ₹50,000 = **₹20,000**."
+          "def": "A covered situation where input-goods tax rates are higher than output rates, potentially causing accumulated credit; restrictions apply."
         },
         {
-          "title": "Cash versus credit",
-          "body": "A business has ₹15,000 excess cash-ledger deposit and ₹15,000 credit-ledger balance. These are not the same refund category: the credit balance requires a qualifying statutory unutilised-ITC ground and computation."
+          "term": "Relevant date",
+          "def": "The legally specified starting date for a refund time limit, which depends on the category."
+        }
+      ],
+      "explanation": "### 1. Name the refund reason\nIs it excess cash deposited, wrong/excess tax, eligible export credit or eligible inverted-rate accumulation? Different categories use different documents, amounts and rules. A credit balance alone is not a general refund entitlement.\n\n### 2. Understand the simplified export formula\nFor the covered LUT formula, take qualifying zero-rated turnover as a share of adjusted total turnover, then multiply by the defined Net ITC. These are legal definitions, not arbitrary spreadsheet totals. Capital-goods credit is not simply inserted into this Net ITC figure.\n\n### 3. Do not reuse that formula everywhere\nInverted-rate refunds have a different formula and input-goods focus. Do not copy the export calculation or include all service credit without checking. The 2026 refund amendments also need transaction-period commencement checks.\n\n### 4. Check timing and track the application\nThe general two-year period uses a category-specific relevant date and has exceptions. Keep the application and evidence, resolve deficiency requests, answer proposed rejection and reconcile any approved refund with the accounts.",
+      "legalBasis": "CGST Act sections 54–56; CGST Rules 89–97A; Rule 89(4) and 89(5) category-specific formulae.\n\n[GST Council: Acts, rules and notifications](https://gstcouncil.gov.in/central-gst) · [Check amendments, rules and notifications](https://taxinformation.cbic.gov.in/)",
+      "examples": [
+        {
+          "title": "A simplified LUT refund formula",
+          "body": "Assume qualifying zero-rated turnover ₹4,00,000, adjusted total turnover ₹10,00,000 and correctly defined Net ITC ₹50,000, with no other limit.\n\n1. Qualifying share = 4 ÷ 10 = 40%.\n2. Formula amount = ₹50,000 × 40% = **₹20,000**.\n3. Apply the complete legal definitions and other limits for an actual claim."
+        },
+        {
+          "title": "Cash balance versus credit balance",
+          "body": "Asha has ₹15,000 excess cash deposit and ₹15,000 unused credit.\n\n1. Review the cash refund category for the excess deposit.\n2. For credit, establish a permitted unused-credit refund ground.\n3. Do not assume both balances can be withdrawn by the same calculation."
         }
       ],
       "nuances": [
-        "Relevant date depends on the refund category.",
-        "Capital-goods credit is not automatically included in the export Net ITC definition.",
-        "Inverted-duty and export refund formulae differ."
+        "Net ITC is a formula-defined amount, not the whole ledger.",
+        "The export formula does not automatically apply to inverted-rate refunds.",
+        "The refund clock does not always begin on the invoice date."
       ],
       "recap": [
-        "Select the refund category first.",
-        "Use the complete applicable formula definitions.",
-        "Track limitation and evidence."
+        "Identify the category and timing rule.",
+        "Use its defined credit and turnover amounts.",
+        "Keep evidence and track the outcome."
       ],
       "quiz": [
         {
           "type": "mcq",
-          "question": "Refund limitation should be measured using:",
+          "question": "Which starting date should be used when checking the refund time limit?",
           "options": [
             "Only application file name",
             "Only PAN date",
             "Always invoice date",
-            "The applicable statutory relevant date and exceptions"
+            "The category’s legal starting date, including applicable exceptions"
           ],
           "correctIndex": 3,
           "explanation": "Relevant date differs by refund category.",
@@ -327,7 +365,7 @@ export const module9: Module = {
         },
         {
           "type": "tf",
-          "question": "The same formula applies to every kind of GST refund.",
+          "question": "Every GST refund category uses exactly the same formula.",
           "correctBool": false,
           "explanation": "Cash, export and inverted-rate categories have different rules.",
           "id": "9.4-q2",
@@ -335,7 +373,7 @@ export const module9: Module = {
         },
         {
           "type": "numeric",
-          "question": "Qualifying zero-rated turnover ₹4 lakh, adjusted total ₹10 lakh, Net ITC ₹50,000. Simplified maximum refund in ₹?",
+          "question": "For a simplified eligible LUT refund, zero-rated turnover is ₹4 lakh, adjusted total turnover ₹10 lakh and correctly defined Net ITC ₹50,000. With no other limit, what is the formula amount, in rupees?",
           "correctNumber": 20000,
           "tolerance": 0.01,
           "explanation": "4/10 × ₹50,000 = ₹20,000.",
@@ -344,28 +382,34 @@ export const module9: Module = {
         },
         {
           "type": "mcq",
-          "question": "Capital-goods credit is automatically part of Rule 89(4) Net ITC?",
+          "question": "Can all capital-goods credit automatically be included in the LUT refund formula's Net ITC?",
           "options": [
-            "No; use the rule’s defined eligible components",
+            "No; include only what that formula’s credit definition allows",
             "Only if rounded",
             "Always 50%",
             "Yes all of it"
           ],
           "correctIndex": 0,
-          "explanation": "The Net ITC definition must be used rather than all ledger credit.",
+          "explanation": "The Net purchase credit (ITC) definition must be used rather than all ledger credit.",
           "id": "9.4-q4",
           "sectionRef": "CGST Act sections 54–56; CGST Rules 89–97A; Rule 89(4) and 89(5) category-specific formulae."
         }
-      ]
+      ],
+      "learningGoal": "Identify the refund category before calculating how much can be claimed.",
+      "story": "Asha has unused money in her cash account and unused credit in her credit account. She cannot treat both as the same kind of refund. The reason for the balance determines the process and calculation.",
+      "selfCheck": {
+        "question": "Does ₹15,000 in the credit ledger automatically mean a ₹15,000 cash refund?",
+        "answer": "No. A qualifying statutory refund category, eligible components and the applicable calculation are needed."
+      }
     }
   ],
   "moduleQuiz": [
     {
       "type": "mcq",
-      "question": "A supplier serves its own foreign branch and receives foreign currency. What must be checked?",
+      "question": "An Indian business serves its own foreign branch and receives foreign currency. What must be checked?",
       "options": [
         "Only the payment",
-        "Distinct-establishment export condition and all other tests",
+        "The own-establishment restriction and all the other export conditions",
         "Only invoice font",
         "No conditions"
       ],
@@ -376,7 +420,7 @@ export const module9: Module = {
     },
     {
       "type": "tf",
-      "question": "SEZ evidence should identify authorised operations and the prescribed receipt/endorsement.",
+      "question": "SEZ evidence should support the authorised purpose and prescribed receipt or endorsement.",
       "correctBool": true,
       "explanation": "It supports zero-rating and the applicable refund process.",
       "id": "m9-q2",
@@ -384,7 +428,7 @@ export const module9: Module = {
     },
     {
       "type": "numeric",
-      "question": "Qualifying import-service RCM base ₹50,000 at assumed 18%. Cash tax in ₹?",
+      "question": "Assume a covered overseas-service purchase is ₹50,000 before reverse-charge GST at 18%. What cash tax is due, in rupees?",
       "correctNumber": 9000,
       "tolerance": 0.01,
       "explanation": "₹50,000 × 18% = ₹9,000.",
@@ -393,15 +437,15 @@ export const module9: Module = {
     },
     {
       "type": "tf",
-      "question": "Goods-import IGST should always be computed only on the foreign vendor invoice amount.",
+      "question": "Import IGST must always be calculated only on the foreign seller's invoice price.",
       "correctBool": false,
-      "explanation": "The prescribed customs tax base can include duties and additions.",
+      "explanation": "The required customs tax base can include duties and additions.",
       "id": "m9-q4",
       "sectionRef": "IGST Act sections 2(11), 5 and 13; Customs Tariff Act section 3(7)/(8); CGST Act sections 16/17 and relevant import-service RCM notification."
     },
     {
       "type": "numeric",
-      "question": "Assume a supplier is legally eligible for the IGST-paid route and export value ₹2,00,000 attracts 18%. Tax in ₹?",
+      "question": "Assume the exporter is eligible for the IGST-paid route, with ₹2,00,000 export value before tax at 18%. What is IGST, in rupees?",
       "correctNumber": 36000,
       "tolerance": 0.01,
       "explanation": "₹2,00,000 × 18% = ₹36,000; route eligibility is an express assumption.",
@@ -410,15 +454,15 @@ export const module9: Module = {
     },
     {
       "type": "tf",
-      "question": "All input-credit ledger balances are automatically refundable after any export.",
+      "question": "Any export automatically makes the entire purchase-credit balance refundable.",
       "correctBool": false,
-      "explanation": "Refund category, eligible credit and statutory restrictions determine the amount.",
+      "explanation": "Refund category, eligible credit and legal restrictions determine the amount.",
       "id": "m9-q6",
       "sectionRef": "IGST Act section 16(3)–(5); CGST Act section 54; CGST Rules 89, 96 and 96A."
     },
     {
       "type": "numeric",
-      "question": "Qualifying zero-rated turnover ₹6 lakh, adjusted total ₹12 lakh, correctly defined Net ITC ₹80,000. Simplified formula amount in ₹?",
+      "question": "For a simplified eligible LUT refund, qualifying turnover is ₹6 lakh, adjusted total turnover ₹12 lakh and correctly defined Net ITC ₹80,000. Before other limits, what is the formula amount, in rupees?",
       "correctNumber": 40000,
       "tolerance": 0.01,
       "explanation": "6/12 × ₹80,000 = ₹40,000, before other constraints.",
@@ -427,11 +471,11 @@ export const module9: Module = {
     },
     {
       "type": "mcq",
-      "question": "An inverted-rate refund is prepared by copying the LUT export formula. Best response?",
+      "question": "Someone copies the LUT export formula for an inverted-rate refund. What should happen next?",
       "options": [
         "Use the cash balance only",
         "Accept automatically",
-        "Recompute under the inverted-category rule and definitions",
+        "Use the inverted-rate category’s own formula and eligibility definitions",
         "Use gross sales only"
       ],
       "correctIndex": 2,

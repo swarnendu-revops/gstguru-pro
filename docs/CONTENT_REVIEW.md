@@ -35,3 +35,5 @@ Automated checks validate software behaviour, data structure and answer keys; th
 ## Change log
 
 - 7 October 2026: initial GST course authored; source anchors and transition limitations recorded.
+
+- 8 October 2026: rewrote all 40 lessons for readers without a finance/GST background, with 80 numbered worked examples and 40 explain-back prompts. Reworded 240 quiz prompts and dense options/feedback, retaining IDs and scoring values. Moved law references to optional reading and added contextual practice-word help. This is a teaching rewrite within the recorded legal scope, not a fresh exhaustive amendment review.

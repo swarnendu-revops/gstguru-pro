@@ -7,7 +7,7 @@
     "build": "next build --webpack",
     "preview": "node scripts/serve-static.mjs",
     "typecheck": "next typegen && tsc --noEmit",
-    "verify": "tsc --target es2020 --module commonjs --moduleResolution node --esModuleInterop --skipLibCheck --outDir .verification lib/content/index.ts lib/content/finalExam.ts lib/quiz.ts lib/progress.ts && node scripts/verify.cjs .verification"
+    "verify": "tsc --target es2020 --module commonjs --moduleResolution node --esModuleInterop --skipLibCheck --outDir .verification lib/content/index.ts lib/content/finalExam.ts lib/content/glossary.ts lib/quiz.ts lib/progress.ts && node scripts/verify.cjs .verification"
   },
   "dependencies": {
     "next": "16.4.0",

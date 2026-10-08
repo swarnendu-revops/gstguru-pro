@@ -22,3 +22,15 @@ Initial release: 7 October 2026.
 Browser interaction tests used a separate local port/origin so their saved results do not appear in the primary preview.
 
 These checks validate the software and data structure. Legal editorial scope and limits are documented in CONTENT_REVIEW.md.
+
+## Beginner teaching revision — 8 October 2026
+
+- All 40 lessons contain an everyday situation, plain-language definitions, numbered teaching steps, two worked examples, a recap and an explain-back check.
+- All 240 question IDs, answer keys, numeric tolerances and question types match the prior release. Prompts and dense answer labels were rewritten; the 60-question final assessment remains balanced.
+- Route type generation, TypeScript, course verifier and production static export passed; all 65 local index routes served successfully.
+- Browser checks covered the first lesson, an advanced credit-sharing lesson, expandable self-checks, practice word help and correct-answer feedback.
+- Final-assessment navigation accepted an Indian-grouped numeric answer and kept feedback and practice word help hidden during the attempt.
+- Phone viewport 390 × 844: first and advanced lessons had matching document/scroll widths of 390, with no horizontal overflow. Temporary viewport override was reset.
+- Browser warning/error log in exercised flows: empty.
+
+The teaching rewrite retains the recorded legal scope; it does not constitute a new exhaustive amendment review.
